@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -43,21 +44,54 @@
             </objects>
             <point key="canvasLocation" x="55" y="-603"/>
         </scene>
-        <!--Home-->
+        <!--Welcome-->
         <scene sceneID="YUr-dy-do2">
             <objects>
-                <viewController id="XWh-dF-2wQ" sceneMemberID="viewController">
+                <viewController id="XWh-dF-2wQ" customClass="HomeViewController" customModule="Weathero" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V5o-zN-vgH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weathero is the best place to gain new knowledge and test your abilities in a fun way." lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8c-oY-xbD">
+                                <rect key="frame" x="32" y="104" width="350" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJG-Hs-7Ls">
+                                <rect key="frame" x="32" y="741" width="350" height="40"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3SZ-et-m6O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Gain New Knowledge">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ClickToQuiz:" destination="XWh-dF-2wQ" eventType="touchUpInside" id="Nu8-Mo-QJ7"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Omq-FM-VLA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hJG-Hs-7Ls" firstAttribute="leading" secondItem="Omq-FM-VLA" secondAttribute="leading" constant="32" id="0Hj-Oo-YkY"/>
+                            <constraint firstItem="Omq-FM-VLA" firstAttribute="bottom" secondItem="hJG-Hs-7Ls" secondAttribute="bottom" constant="32" id="1gl-M7-H1j"/>
+                            <constraint firstItem="z8c-oY-xbD" firstAttribute="leading" secondItem="Omq-FM-VLA" secondAttribute="leading" constant="32" id="BAa-XJ-pY5"/>
+                            <constraint firstItem="Omq-FM-VLA" firstAttribute="trailing" secondItem="hJG-Hs-7Ls" secondAttribute="trailing" constant="32" id="EKp-GW-PiE"/>
+                            <constraint firstItem="z8c-oY-xbD" firstAttribute="top" secondItem="Omq-FM-VLA" secondAttribute="top" constant="16" id="btb-1n-KZp"/>
+                            <constraint firstItem="Omq-FM-VLA" firstAttribute="trailing" secondItem="z8c-oY-xbD" secondAttribute="trailing" constant="32" id="cca-Im-U0I"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="UKB-ro-Zne"/>
+                    <navigationItem key="navigationItem" title="Welcome" largeTitleDisplayMode="always" id="UKB-ro-Zne"/>
+                    <connections>
+                        <outlet property="GainButton" destination="hJG-Hs-7Ls" id="gCX-vs-63r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1dI-C6-UbS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="960" y="-597"/>
+            <point key="canvasLocation" x="959.4202898550725" y="-597.32142857142856"/>
         </scene>
         <!--Quiz-->
         <scene sceneID="HuU-hd-ZiY">
@@ -79,7 +113,7 @@
         <!--Quiz-->
         <scene sceneID="U9F-qz-iyN">
             <objects>
-                <viewController id="ga9-M2-aiy" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QuizView" id="ga9-M2-aiy" customClass="QuizViewController" customModule="Weathero" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WwI-p6-Gk6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -96,6 +130,9 @@
     <resources>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="text.book.closed" catalog="system" width="115" height="128"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
