@@ -73,7 +73,7 @@ class AnswerQuizViewController: UIViewController {
     }
     
     func reloadUI() {
-        restQuestionLabel.text = "\(allQuestions.list.count - questionNumber - 1) Questions Left"
+        restQuestionLabel.text = "\(allQuestions.list.count - questionNumber) Questions Left"
         processBarView.frame.size.width = (view.frame.size.width / CGFloat(allQuestions.list.count)) * CGFloat(questionNumber)
     }
     
