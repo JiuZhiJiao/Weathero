@@ -60,6 +60,12 @@ class QuizViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        guard let learningVC = storyBoard.instantiateViewController(withIdentifier: "learningViewController") as? LearningViewController else {
+            return
+        }
+        learningVC.scenarioTitle = scenarios[indexPath.row].name
+        navigationController?.show(learningVC, sender: nil)
         
     }
 
