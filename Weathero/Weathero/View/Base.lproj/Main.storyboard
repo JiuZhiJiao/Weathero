@@ -44,7 +44,7 @@
             </objects>
             <point key="canvasLocation" x="55" y="-603"/>
         </scene>
-        <!--Welcome, Kids-->
+        <!--Welcome-->
         <scene sceneID="YUr-dy-do2">
             <objects>
                 <viewController id="XWh-dF-2wQ" customClass="HomeViewController" customModule="Weathero" customModuleProvider="target" sceneMemberID="viewController">
@@ -84,7 +84,7 @@
                             <constraint firstItem="Omq-FM-VLA" firstAttribute="trailing" secondItem="z8c-oY-xbD" secondAttribute="trailing" constant="32" id="cca-Im-U0I"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Welcome, Kids" largeTitleDisplayMode="always" id="UKB-ro-Zne"/>
+                    <navigationItem key="navigationItem" title="Welcome" largeTitleDisplayMode="always" id="UKB-ro-Zne"/>
                     <connections>
                         <outlet property="GainButton" destination="hJG-Hs-7Ls" id="gCX-vs-63r"/>
                     </connections>
