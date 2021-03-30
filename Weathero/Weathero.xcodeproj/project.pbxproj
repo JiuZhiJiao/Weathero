@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		211DD08A2612D5DF00EC34D4 /* QuestionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211DD0892612D5DF00EC34D4 /* QuestionSet.swift */; };
+		215EAFF42613483500D6B5C7 /* Scenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215EAFF32613483500D6B5C7 /* Scenario.swift */; };
 		2199A6102612B41F0003B571 /* PWDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2199A60F2612B41F0003B571 /* PWDViewController.swift */; };
 		B4D25CF0260F67A600C01E0B /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D25CEF260F67A600C01E0B /* FeedbackViewController.swift */; };
 		B4E018F9260C470C00101CC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E018F8260C470C00101CC8 /* AppDelegate.swift */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		211DD0892612D5DF00EC34D4 /* QuestionSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionSet.swift; sourceTree = "<group>"; };
+		215EAFF32613483500D6B5C7 /* Scenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scenario.swift; sourceTree = "<group>"; };
 		2199A60F2612B41F0003B571 /* PWDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWDViewController.swift; sourceTree = "<group>"; };
 		B4D25CEF260F67A600C01E0B /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
 		B4E018F5260C470C00101CC8 /* Weathero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weathero.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +92,7 @@
 				B4E01926260F51C900101CC8 /* Question.swift */,
 				211DD0892612D5DF00EC34D4 /* QuestionSet.swift */,
 				B4E01929260F534100101CC8 /* QuestionBank.swift */,
+				215EAFF32613483500D6B5C7 /* Scenario.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 			files = (
 				2199A6102612B41F0003B571 /* PWDViewController.swift in Sources */,
 				B4E01920260F3C8300101CC8 /* AnswerQuizViewController.swift in Sources */,
+				215EAFF42613483500D6B5C7 /* Scenario.swift in Sources */,
 				B4E01927260F51C900101CC8 /* Question.swift in Sources */,
 				B4E01911260C4FB800101CC8 /* QuizViewController.swift in Sources */,
 				B4D25CF0260F67A600C01E0B /* FeedbackViewController.swift in Sources */,

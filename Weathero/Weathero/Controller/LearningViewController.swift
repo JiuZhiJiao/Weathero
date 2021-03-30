@@ -11,9 +11,18 @@ class LearningViewController: UIViewController {
     
     var scenarioTitle = ""
 
+    @IBOutlet weak var scenarioImage: UIImageView!
+    @IBOutlet weak var scenarioIntroLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        for item in scenarios {
+            if item.name == scenarioTitle{
+                scenarioImage.image = item.learningImage
+                scenarioIntroLabel.text = item.desc
+            }
+        }
         print(scenarioTitle)
     }
     
@@ -22,6 +31,7 @@ class LearningViewController: UIViewController {
         if segue.destination is AnswerQuizViewController {
             let vc = segue.destination as? AnswerQuizViewController
             vc?.scenarioTitle = scenarioTitle
+            
         }
     }
     

@@ -15,8 +15,9 @@ class Question {
     var optionC: String
     var optionD: String
     var correctAnswer: Int
+    var feedback: String
     
-    init(questionNum: Int, question: String, choiceA: String, choiceB: String, choiceC: String, choiceD: String, answer: Int) {
+    init(questionNum: Int, question: String, choiceA: String, choiceB: String, choiceC: String, choiceD: String, answer: Int, feedback: String) {
         self.questionNum = questionNum
         self.questionText = question
         self.optionA = choiceA
@@ -24,5 +25,6 @@ class Question {
         self.optionC = choiceC
         self.optionD = choiceD
         self.correctAnswer = answer
+        self.feedback = feedback
     }
 }
