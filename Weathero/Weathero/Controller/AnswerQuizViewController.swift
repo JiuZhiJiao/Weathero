@@ -22,14 +22,19 @@ class AnswerQuizViewController: UIViewController {
     var scenarioTitle = ""
     var questionNumber = 0
     var correctAnswer = 0
-    lazy var allQuestions = QuestionBank()
+    lazy var allQuestion = QuestionBank().list
+    var allQuestions = [Question]()
     // wrong answer collect the index of the questions, begin with 0
     var wrongAnswers = [Int]()
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        for item in allQuestion{
+            if item.setName == scenarioTitle{
+                allQuestions = item.list
+            }
+        }
         reloadQuestion()
         reloadUI()
 
@@ -49,8 +54,8 @@ class AnswerQuizViewController: UIViewController {
     
     // MARK: - Other Functions
     func reloadQuestion() {
-        if questionNumber < allQuestions.list.count {
-            let currentQuestion = allQuestions.list[questionNumber]
+        if questionNumber < allQuestions.count {
+            let currentQuestion = allQuestions[questionNumber]
             questionLabel.text = currentQuestion.questionText
             optionA.setTitle("     A. "+currentQuestion.optionA, for: .normal)
             optionB.setTitle("     B. "+currentQuestion.optionB, for: .normal)
@@ -65,18 +70,18 @@ class AnswerQuizViewController: UIViewController {
             
             let alter = UIAlertController(title: "Well Done", message: "End of Quiz. Do you want to get feedback?", preferredStyle: .alert)
             let feedbackAction = UIAlertAction(title: "Get Feedback", style: .default, handler: {action in self.getFeedback()})
-            //let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: {_ in print("cancel feedback")})
             let quitAction = UIAlertAction(title: "Quit", style: .default, handler: {action in self.quit()})
+            //let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: {_ in print("cancel feedback")})
             alter.addAction(feedbackAction)
-            //alter.addAction(cancelAction)
             alter.addAction(quitAction)
+            //alter.addAction(cancelAction)
             present(alter, animated: true, completion: nil)
         }
     }
     
     func reloadUI() {
-        restQuestionLabel.text = "\(allQuestions.list.count - questionNumber) Questions Left"
-        processBarView.frame.size.width = (view.frame.size.width / CGFloat(allQuestions.list.count)) * CGFloat(questionNumber)
+        restQuestionLabel.text = "\(allQuestions.count - questionNumber) Questions Left"
+        processBarView.frame.size.width = (view.frame.size.width / CGFloat(allQuestions.count)) * CGFloat(questionNumber)
     }
     
     func getFeedback() {
@@ -87,11 +92,10 @@ class AnswerQuizViewController: UIViewController {
         feedbackVC.wrongAnswers = wrongAnswers
         navigationController?.show(feedbackVC, sender: nil)
     }
-    
+        
     func quit() {
         navigationController?.popViewController(animated: true)
     }
-        
     /*
     // MARK: - Navigation
 
