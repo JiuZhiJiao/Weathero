@@ -21,8 +21,10 @@ class PWDViewController: UIViewController {
     @IBAction func clickOkButton(_ sender: Any) {
         let pwd = pwdField.text
         if pwd == "131415" {
-            performSegue(withIdentifier: "showMainboard", sender: nil)
+            //jump to App screen
+            self.performSegue(withIdentifier: "showApp", sender: nil)
         } else {
+            //show error information
             let alter = UIAlertController(title: "Password Error", message: "The password is wrong, please try again.", preferredStyle: .alert)
             let ok = UIAlertAction(title: "OK", style: .cancel, handler: .none)
             alter.addAction(ok)
