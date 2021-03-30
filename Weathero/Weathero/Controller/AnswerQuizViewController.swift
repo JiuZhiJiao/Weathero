@@ -65,9 +65,11 @@ class AnswerQuizViewController: UIViewController {
             
             let alter = UIAlertController(title: "Well Done", message: "End of Quiz. Do you want to get feedback?", preferredStyle: .alert)
             let feedbackAction = UIAlertAction(title: "Get Feedback", style: .default, handler: {action in self.getFeedback()})
-            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: {_ in print("cancel feedback")})
+            //let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: {_ in print("cancel feedback")})
+            let quitAction = UIAlertAction(title: "Quit", style: .default, handler: {action in self.quit()})
             alter.addAction(feedbackAction)
-            alter.addAction(cancelAction)
+            //alter.addAction(cancelAction)
+            alter.addAction(quitAction)
             present(alter, animated: true, completion: nil)
         }
     }
@@ -84,6 +86,10 @@ class AnswerQuizViewController: UIViewController {
         }
         feedbackVC.wrongAnswers = wrongAnswers
         navigationController?.show(feedbackVC, sender: nil)
+    }
+    
+    func quit() {
+        navigationController?.popViewController(animated: true)
     }
         
     /*
