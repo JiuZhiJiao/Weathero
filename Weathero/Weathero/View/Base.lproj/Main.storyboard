@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hpa-cm-G36">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aMM-Ro-AJA">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -9,10 +9,77 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="Zgj-SX-bEV">
+            <objects>
+                <viewController id="aMM-Ro-AJA" customClass="PWDViewController" customModule="Weathero" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="em8-xo-lnC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MP27 Weathero  Iteration 1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fJ-Fj-Xug">
+                                <rect key="frame" x="81" y="184" width="252" height="74"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter the password to continue:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guR-rP-xA7">
+                                <rect key="frame" x="30" y="318" width="354" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ncL-QY-sLt">
+                                <rect key="frame" x="30" y="363.5" width="354" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Sro-f2-ArD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3E-11-ZTs">
+                                <rect key="frame" x="30" y="453.5" width="354" height="36"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="OK">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickOkButton:" destination="aMM-Ro-AJA" eventType="touchUpInside" id="RbN-0U-Qde"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="G8X-bd-Wx5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="G8X-bd-Wx5" firstAttribute="trailing" secondItem="ncL-QY-sLt" secondAttribute="trailing" constant="30" id="AFn-JU-CQt"/>
+                            <constraint firstItem="ncL-QY-sLt" firstAttribute="top" secondItem="guR-rP-xA7" secondAttribute="bottom" constant="20" id="I1M-Wp-u7U"/>
+                            <constraint firstItem="5fJ-Fj-Xug" firstAttribute="leading" secondItem="G8X-bd-Wx5" secondAttribute="leading" constant="81" id="VSR-kl-YSy"/>
+                            <constraint firstItem="G8X-bd-Wx5" firstAttribute="trailing" secondItem="A3E-11-ZTs" secondAttribute="trailing" constant="30" id="Ybg-Xn-P3t"/>
+                            <constraint firstItem="5fJ-Fj-Xug" firstAttribute="top" secondItem="G8X-bd-Wx5" secondAttribute="top" constant="140" id="YpS-gr-btt"/>
+                            <constraint firstItem="guR-rP-xA7" firstAttribute="top" secondItem="5fJ-Fj-Xug" secondAttribute="bottom" constant="60" id="ZuW-4p-0ac"/>
+                            <constraint firstItem="G8X-bd-Wx5" firstAttribute="trailing" secondItem="5fJ-Fj-Xug" secondAttribute="trailing" constant="81" id="gBz-GR-kO5"/>
+                            <constraint firstItem="A3E-11-ZTs" firstAttribute="leading" secondItem="G8X-bd-Wx5" secondAttribute="leading" constant="30" id="gcW-tp-olY"/>
+                            <constraint firstItem="G8X-bd-Wx5" firstAttribute="trailing" secondItem="guR-rP-xA7" secondAttribute="trailing" constant="30" id="jwV-HM-rJJ"/>
+                            <constraint firstItem="A3E-11-ZTs" firstAttribute="top" secondItem="ncL-QY-sLt" secondAttribute="bottom" constant="50" id="sIG-MB-WY7"/>
+                            <constraint firstItem="guR-rP-xA7" firstAttribute="leading" secondItem="G8X-bd-Wx5" secondAttribute="leading" constant="30" id="tZX-6m-qUT"/>
+                            <constraint firstItem="ncL-QY-sLt" firstAttribute="leading" secondItem="G8X-bd-Wx5" secondAttribute="leading" constant="30" id="ziI-e5-WaD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pwdField" destination="ncL-QY-sLt" id="OSe-Qa-vpR"/>
+                        <segue destination="hpa-cm-G36" kind="show" identifier="showMainboard" id="CEY-VN-zH5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wxg-CW-hT3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2452" y="-395"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="DBW-yR-zSO">
             <objects>
                 <tabBarController id="hpa-cm-G36" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="nMq-lF-ZeC"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Z7S-Qj-Si2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -25,7 +92,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="35W-dP-eBc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1248" y="68"/>
+            <point key="canvasLocation" x="-1610" y="-395"/>
         </scene>
         <!--Home-->
         <scene sceneID="IPk-D1-wGp">
@@ -33,7 +100,7 @@
                 <navigationController id="6PT-mg-uX4" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="yKT-Y1-3NA"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="isr-6q-vV6">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -49,7 +116,7 @@
             <objects>
                 <viewController id="XWh-dF-2wQ" customClass="HomeViewController" customModule="Weathero" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V5o-zN-vgH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Weathero is the best place to gain new knowledge about climate change and its affects on floods and droughts." lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8c-oY-xbD">
@@ -59,7 +126,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJG-Hs-7Ls">
-                                <rect key="frame" x="32" y="741" width="350" height="40"/>
+                                <rect key="frame" x="32" y="687" width="350" height="40"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="3SZ-et-m6O"/>
@@ -106,7 +173,7 @@
                 <navigationController id="FfC-ee-Jvi" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Quiz" image="text.book.closed" catalog="system" id="NqR-nZ-mMd"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aen-iX-Emk">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -122,11 +189,11 @@
             <objects>
                 <viewController storyboardIdentifier="QuizView" id="ga9-M2-aiy" customClass="QuizViewController" customModule="Weathero" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WwI-p6-Gk6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="o5i-g7-p0Q">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
                                 <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="scenarioCell" rowHeight="390" id="EKP-Px-s74" customClass="ScenarioTableViewCell" customModule="Weathero" customModuleProvider="target">
@@ -191,11 +258,11 @@
             <objects>
                 <viewController storyboardIdentifier="learningViewController" id="Z4Y-3S-Ef2" customClass="LearningViewController" customModule="Weathero" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qFN-ot-t01">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5l-HZ-ZEv">
-                                <rect key="frame" x="32" y="741" width="350" height="40"/>
+                                <rect key="frame" x="32" y="687" width="350" height="40"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Ung-na-vLg"/>
@@ -227,11 +294,11 @@
             <objects>
                 <viewController storyboardIdentifier="answerQuizViewController" id="1of-U1-d30" customClass="AnswerQuizViewController" customModule="Weathero" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5dH-Qv-Eoo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Z4-rh-fNU" userLabel="BarBackgroundView">
-                                <rect key="frame" x="0.0" y="88" width="414" height="10"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="10"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OXO-Ir-3hc" userLabel="BarProcessView">
                                         <rect key="frame" x="0.0" y="0.0" width="5" height="10"/>
@@ -245,7 +312,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 Questions Left" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ada-Fc-LX3">
-                                <rect key="frame" x="280" y="98" width="124" height="15"/>
+                                <rect key="frame" x="280" y="66" width="124" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="4Tw-Q8-pI0"/>
                                 </constraints>
@@ -254,7 +321,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1O-vq-aED">
-                                <rect key="frame" x="32" y="129" width="350" height="391"/>
+                                <rect key="frame" x="32" y="97" width="350" height="369"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Here is the question,">
                                         <attributes>
@@ -273,7 +340,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="wMe-vS-74U" userLabel="ButtonStackView">
-                                <rect key="frame" x="32" y="552" width="350" height="245"/>
+                                <rect key="frame" x="32" y="498" width="350" height="245"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hb-Ez-7gO">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="50"/>
@@ -364,7 +431,7 @@
             <objects>
                 <viewController storyboardIdentifier="feedbackViewController" id="5zp-8x-geB" customClass="FeedbackViewController" customModule="Weathero" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H4N-4q-frp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="qyB-K0-IMQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

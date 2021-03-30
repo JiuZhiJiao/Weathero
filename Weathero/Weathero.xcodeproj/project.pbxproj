@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2199A6102612B41F0003B571 /* PWDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2199A60F2612B41F0003B571 /* PWDViewController.swift */; };
 		B4D25CF0260F67A600C01E0B /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D25CEF260F67A600C01E0B /* FeedbackViewController.swift */; };
 		B4E018F9260C470C00101CC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E018F8260C470C00101CC8 /* AppDelegate.swift */; };
 		B4E018FB260C470C00101CC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E018FA260C470C00101CC8 /* SceneDelegate.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2199A60F2612B41F0003B571 /* PWDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWDViewController.swift; sourceTree = "<group>"; };
 		B4D25CEF260F67A600C01E0B /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
 		B4E018F5260C470C00101CC8 /* Weathero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weathero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E018F8260C470C00101CC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				B4E0191C260F3C7300101CC8 /* LearningViewController.swift */,
 				B4E0191F260F3C8300101CC8 /* AnswerQuizViewController.swift */,
 				B4D25CEF260F67A600C01E0B /* FeedbackViewController.swift */,
+				2199A60F2612B41F0003B571 /* PWDViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2199A6102612B41F0003B571 /* PWDViewController.swift in Sources */,
 				B4E01920260F3C8300101CC8 /* AnswerQuizViewController.swift in Sources */,
 				B4E01927260F51C900101CC8 /* Question.swift in Sources */,
 				B4E01911260C4FB800101CC8 /* QuizViewController.swift in Sources */,
