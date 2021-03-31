@@ -18,6 +18,10 @@ class PWDViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        pwdField.resignFirstResponder()
+    }
+    
     @IBAction func clickOkButton(_ sender: Any) {
         let pwd = pwdField.text
         if pwd == "131415" {
