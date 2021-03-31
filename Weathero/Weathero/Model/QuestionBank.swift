@@ -14,8 +14,8 @@ class QuestionBank {
         var setList = [QuestionSet]()
        
         var qList = [Question]()
-        qList.append(Question(questionNum: 1,question: "Which of the following statements is true?", choiceA: "Extreme weather can be stopped", choiceB: "Scientists cannot predict extreme weather", choiceC: "Scientists can warn people about extreme weather", choiceD: "Extreme weather does not have patterns", answer: 3, feedback: "Usually,Scientists use a professional prediction model and reliable data to predict what will happen in the following years."))
-        qList.append(Question(questionNum: 2,question: "Which of the following is a possible condition during an El Niño event?", choiceA: "Drought in Australia", choiceB: "More rain during the dry season in Florida", choiceC: "Trade winds weaken", choiceD: "All the above", answer: 4, feedback: "During El Niño, chances for drought increase across India, Indonesia and Australia and a large part of the Amazon."))
+        qList.append(Question(questionNum: 1,question: "How can extreme events like hurricanes, drought, & wildfires impact energy infrastructure?", choiceA: "Water shortages", choiceB: "Power outages", choiceC: "Higher electricity price", choiceD: "All above correct", answer: 4, feedback: "Extreme weather can cause many social problems, such as water shortages, power outages, higher electricity and gas price."))
+        qList.append(Question(questionNum: 2,question: "Which of the following is a possible condition during an El Niño event?", choiceA: "Drought in Australia", choiceB: "More rain in dry season", choiceC: "Trade winds weaken", choiceD: "All the above", answer: 4, feedback: "During El Niño, chances for drought increase across India, Indonesia and Australia and a large part of the Amazon."))
         qList.append(Question(questionNum: 3,question: "Which of the following is a greenhouse gas?", choiceA: "CO2", choiceB: "CH4", choiceC: "Water Vapor", choiceD: "All of the above", answer: 4, feedback: "These gases include carbon dioxide (CO2), methane (CH4), water vapor, nitrous oxide (N2O) and ozone (O3)."))
         setList.append(QuestionSet(setName: "Climate Change", list: qList))
         qList.removeAll()
@@ -26,8 +26,8 @@ class QuestionBank {
         setList.append(QuestionSet(setName: "Droughts", list: qList))
         qList.removeAll()
         
-        qList.append(Question(questionNum: 1,question: "What are the floods?", choiceA: "Pellets of ice fall during thunderstorms", choiceB: "Whirling columns of thunderstorms", choiceC: "Water overflows oceans or too much precipitation", choiceD: "None of the above", answer: 3, feedback: "This is basic concept of floods."))
-        qList.append(Question(questionNum: 2,question: "What is a flash flood?", choiceA: "A sophisticated flood", choiceB: "Power lines fell in flood waters", choiceC: "A deep flood", choiceD: "Flood  happens fast with little warning", answer: 4, feedback: "Flash flooding occurs when soil absorption, runoff or drainage cannot adequately disperse intense rainfall, and is usually caused by slow-moving thunderstorms."))
+        qList.append(Question(questionNum: 1,question: "What are the floods?", choiceA: "Ice fall during thunderstorms", choiceB: "Whirling columns of thunderstorms", choiceC: "Too much precipitation", choiceD: "None of the above", answer: 3, feedback: "This is basic concept of floods."))
+        qList.append(Question(questionNum: 2,question: "What is a flash flood?", choiceA: "A sophisticated flood", choiceB: "Power lines fell in flood waters", choiceC: "A deep flood", choiceD: "Happens fast without warning", answer: 4, feedback: "Flash flooding occurs when soil absorption, runoff or drainage cannot adequately disperse intense rainfall, and is usually caused by slow-moving thunderstorms."))
         qList.append(Question(questionNum: 3,question: "What are the effects of floods?", choiceA: "Uprooted trees", choiceB: "Wash away bridges and buildings", choiceC: "Destroy homes", choiceD: "All the above", answer: 4, feedback: "The flood will have many effects on people's life"))
         setList.append(QuestionSet(setName: "Floods", list: qList))
         qList.removeAll()

@@ -25,7 +25,8 @@ class AnswerQuizViewController: UIViewController {
     lazy var allQuestion = QuestionBank().list
     var allQuestions = [Question]()
     // wrong answer collect the index of the questions, begin with 0
-    var wrongAnswers = [Int]()
+    var wrongAnswers = [Question]()
+    var selectedOptions = [Int]()
     
 
     override func viewDidLoad() {
@@ -45,7 +46,8 @@ class AnswerQuizViewController: UIViewController {
         if sender.tag == correctAnswer {
             print("correct")
         } else {
-            wrongAnswers.append(questionNumber)
+            selectedOptions.append(sender.tag)
+            wrongAnswers.append(allQuestions[questionNumber])
             print("\(questionNumber) is incorrect")
         }
         questionNumber += 1
@@ -89,6 +91,7 @@ class AnswerQuizViewController: UIViewController {
         guard let feedbackVC = storyBoard.instantiateViewController(withIdentifier: "feedbackViewController") as? FeedbackViewController else {
             return
         }
+        feedbackVC.selectedOptions = selectedOptions
         feedbackVC.wrongAnswers = wrongAnswers
         navigationController?.show(feedbackVC, sender: nil)
     }

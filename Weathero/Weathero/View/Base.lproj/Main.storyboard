@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aMM-Ro-AJA">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -281,7 +282,7 @@
                                     <constraint firstAttribute="height" constant="200" id="1Ed-ij-IFl"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the Scenario description." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1W-rZ-Dve">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the Scenario description." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1W-rZ-Dve">
                                 <rect key="frame" x="20" y="328" width="374" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -348,14 +349,14 @@
                                 <attributedString key="attributedText">
                                     <fragment content="Here is the question,">
                                         <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <font key="NSFont" size="20" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="Here is the question,Here is the question,Here is the question">
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <font key="NSFont" size="20" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -456,10 +457,132 @@
                     <view key="view" contentMode="scaleToFill" id="H4N-4q-frp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvF-PC-RqH">
+                                <rect key="frame" x="32" y="104" width="350" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4K-rV-VYc">
+                                <rect key="frame" x="32" y="136" width="350" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="13v-88-09U"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Here is the question,">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Here is the question,Here is the question,Here is the question">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjn-Te-aj0">
+                                <rect key="frame" x="32" y="224" width="350" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A. optionA" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cM5-2p-QjT">
+                                <rect key="frame" x="32" y="256" width="350" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLA-ih-sIE">
+                                <rect key="frame" x="32" y="292.5" width="350" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C. optionC" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7NO-bF-jWG">
+                                <rect key="frame" x="32" y="324.5" width="350" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feedback" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qjp-xh-VGA">
+                                <rect key="frame" x="32" y="361" width="350" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJy-7o-hxE">
+                                <rect key="frame" x="32" y="393" width="350" height="20.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Here is the feedback">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iE8-w7-7Xm">
+                                <rect key="frame" x="32" y="741" width="350" height="40"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="mHb-Vl-QLL"/>
+                                </constraints>
+                                <state key="normal" title="Next Feedback">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextFeedback:" destination="5zp-8x-geB" eventType="touchUpInside" id="8nK-hB-Sx8"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="qyB-K0-IMQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cM5-2p-QjT" firstAttribute="leading" secondItem="qyB-K0-IMQ" secondAttribute="leading" constant="32" id="33c-wc-17W"/>
+                            <constraint firstItem="wjn-Te-aj0" firstAttribute="top" secondItem="D4K-rV-VYc" secondAttribute="bottom" constant="8" id="5oc-mx-YZe"/>
+                            <constraint firstItem="qyB-K0-IMQ" firstAttribute="trailing" secondItem="cM5-2p-QjT" secondAttribute="trailing" constant="32" id="7eV-md-Hk8"/>
+                            <constraint firstItem="vLA-ih-sIE" firstAttribute="top" secondItem="cM5-2p-QjT" secondAttribute="bottom" constant="16" id="8gb-lu-dn9"/>
+                            <constraint firstItem="iE8-w7-7Xm" firstAttribute="leading" secondItem="qyB-K0-IMQ" secondAttribute="leading" constant="32" id="ANG-jm-hrw"/>
+                            <constraint firstItem="qyB-K0-IMQ" firstAttribute="trailing" secondItem="fvF-PC-RqH" secondAttribute="trailing" constant="32" id="Dca-DZ-BTr"/>
+                            <constraint firstItem="cJy-7o-hxE" firstAttribute="top" secondItem="Qjp-xh-VGA" secondAttribute="bottom" constant="8" id="Ji4-Yu-kXN"/>
+                            <constraint firstItem="qyB-K0-IMQ" firstAttribute="trailing" secondItem="cJy-7o-hxE" secondAttribute="trailing" constant="32" id="Kq4-iF-md1"/>
+                            <constraint firstItem="D4K-rV-VYc" firstAttribute="leading" secondItem="qyB-K0-IMQ" secondAttribute="leading" constant="32" id="L0E-eY-b0n"/>
+                            <constraint firstItem="Qjp-xh-VGA" firstAttribute="top" secondItem="7NO-bF-jWG" secondAttribute="bottom" constant="16" id="M3w-y9-XVI"/>
+                            <constraint firstItem="7NO-bF-jWG" firstAttribute="leading" secondItem="qyB-K0-IMQ" secondAttribute="leading" constant="32" id="MZo-Bs-H3a"/>
+                            <constraint firstItem="cM5-2p-QjT" firstAttribute="top" secondItem="wjn-Te-aj0" secondAttribute="bottom" constant="8" id="RE0-h9-cR3"/>
+                            <constraint firstItem="fvF-PC-RqH" firstAttribute="top" secondItem="qyB-K0-IMQ" secondAttribute="top" constant="16" id="S1A-jC-PDl"/>
+                            <constraint firstItem="wjn-Te-aj0" firstAttribute="leading" secondItem="qyB-K0-IMQ" secondAttribute="leading" constant="32" id="S4Z-cR-0Jl"/>
+                            <constraint firstItem="Qjp-xh-VGA" firstAttribute="leading" secondItem="qyB-K0-IMQ" secondAttribute="leading" constant="32" id="TMC-cA-A27"/>
+                            <constraint firstItem="cJy-7o-hxE" firstAttribute="leading" secondItem="qyB-K0-IMQ" secondAttribute="leading" constant="32" id="TU5-pW-SxH"/>
+                            <constraint firstItem="qyB-K0-IMQ" firstAttribute="trailing" secondItem="Qjp-xh-VGA" secondAttribute="trailing" constant="32" id="WQo-oZ-Oq5"/>
+                            <constraint firstItem="vLA-ih-sIE" firstAttribute="leading" secondItem="qyB-K0-IMQ" secondAttribute="leading" constant="32" id="XSA-W1-PDq"/>
+                            <constraint firstItem="7NO-bF-jWG" firstAttribute="top" secondItem="vLA-ih-sIE" secondAttribute="bottom" constant="8" id="azx-6f-Kw2"/>
+                            <constraint firstItem="qyB-K0-IMQ" firstAttribute="bottom" secondItem="iE8-w7-7Xm" secondAttribute="bottom" constant="32" id="dIf-Xv-6FS"/>
+                            <constraint firstItem="D4K-rV-VYc" firstAttribute="top" secondItem="fvF-PC-RqH" secondAttribute="bottom" constant="8" id="kQx-De-tFy"/>
+                            <constraint firstItem="qyB-K0-IMQ" firstAttribute="trailing" secondItem="wjn-Te-aj0" secondAttribute="trailing" constant="32" id="lE7-98-Ej3"/>
+                            <constraint firstItem="qyB-K0-IMQ" firstAttribute="trailing" secondItem="vLA-ih-sIE" secondAttribute="trailing" constant="32" id="o2j-2p-XJJ"/>
+                            <constraint firstItem="qyB-K0-IMQ" firstAttribute="trailing" secondItem="7NO-bF-jWG" secondAttribute="trailing" constant="32" id="pXf-Oc-M97"/>
+                            <constraint firstItem="qyB-K0-IMQ" firstAttribute="trailing" secondItem="iE8-w7-7Xm" secondAttribute="trailing" constant="32" id="tjC-of-fdh"/>
+                            <constraint firstItem="qyB-K0-IMQ" firstAttribute="trailing" secondItem="D4K-rV-VYc" secondAttribute="trailing" constant="32" id="uZF-Ju-nGu"/>
+                            <constraint firstItem="fvF-PC-RqH" firstAttribute="leading" secondItem="qyB-K0-IMQ" secondAttribute="leading" constant="32" id="zcG-RC-qdo"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Feedback" id="7VA-Tc-gYA"/>
+                    <connections>
+                        <outlet property="buttonNextFeedback" destination="iE8-w7-7Xm" id="Rz7-XL-mqD"/>
+                        <outlet property="labelCorrect" destination="7NO-bF-jWG" id="ohk-7D-hDn"/>
+                        <outlet property="labelQuestion" destination="D4K-rV-VYc" id="MVM-eg-glm"/>
+                        <outlet property="labelQuestionNumber" destination="fvF-PC-RqH" id="08s-j0-t4C"/>
+                        <outlet property="labelSelected" destination="cM5-2p-QjT" id="BKr-M1-qo0"/>
+                        <outlet property="lableFeedback" destination="cJy-7o-hxE" id="ITo-iR-LiT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WcQ-g0-COj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
