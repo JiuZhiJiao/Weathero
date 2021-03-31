@@ -15,6 +15,9 @@ class FeedbackViewController: UIViewController {
     @IBOutlet weak var labelCorrect: UILabel!
     @IBOutlet weak var lableFeedback: UILabel!
     @IBOutlet weak var buttonNextFeedback: UIButton!
+    @IBOutlet weak var yourAnswerLabel: UILabel!
+    @IBOutlet weak var correctAnswerLabel: UILabel!
+    @IBOutlet weak var feedbackLabel: UILabel!
     
     var index = 0
     
@@ -23,9 +26,27 @@ class FeedbackViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = true
 
-        print("wrong answer: \(wrongAnswers.count), and \(selectedOptions)")
-        reloadUI(question: wrongAnswers[index], selectedNum: selectedOptions[index])
+        if wrongAnswers.count != 0{
+            print("wrong answer: \(wrongAnswers.count), and \(selectedOptions)")
+            reloadUI(question: wrongAnswers[index], selectedNum: selectedOptions[index])
+        }else{
+            yourAnswerLabel.text = "Congratulation!"
+            labelSelected.text = "You answered all questions correctly."
+            labelQuestionNumber.text = ""
+            correctAnswerLabel.text = ""
+            feedbackLabel.text = ""
+            labelQuestion.text = ""
+            labelCorrect.text = ""
+            lableFeedback.text = ""
+            buttonNextFeedback.isUserInteractionEnabled = false
+            buttonNextFeedback.alpha = 0.4
+        }
+        
+    }
+    @IBAction func backToQuizMenu(_ sender: Any) {
+        self.navigationController?.popToRootViewController(animated: true)
     }
     
     @IBAction func nextFeedback(_ sender: Any) {
@@ -35,11 +56,7 @@ class FeedbackViewController: UIViewController {
             index += 1
             
             reloadUI(question: wrongAnswers[index], selectedNum: selectedOptions[index])
-        } else {
-            buttonNextFeedback.isUserInteractionEnabled = false
-            buttonNextFeedback.alpha = 0.4
         }
-        
         
     }
     
@@ -75,6 +92,11 @@ class FeedbackViewController: UIViewController {
         }
         
         lableFeedback.text = question.feedback
+        
+        if index >= (wrongAnswers.count - 1) {
+            buttonNextFeedback.isUserInteractionEnabled = false
+            buttonNextFeedback.alpha = 0.4
+        }
     }
     
     /*

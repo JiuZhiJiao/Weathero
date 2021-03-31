@@ -529,7 +529,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iE8-w7-7Xm">
-                                <rect key="frame" x="32" y="741" width="350" height="40"/>
+                                <rect key="frame" x="32" y="681" width="350" height="40"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="mHb-Vl-QLL"/>
@@ -541,12 +541,27 @@
                                     <action selector="nextFeedback:" destination="5zp-8x-geB" eventType="touchUpInside" id="8nK-hB-Sx8"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOu-UI-2mj">
+                                <rect key="frame" x="32" y="741" width="350" height="40"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="miI-GX-Qak"/>
+                                </constraints>
+                                <state key="normal" title="Back to Quiz Menu">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="backToQuizMenu:" destination="5zp-8x-geB" eventType="touchUpInside" id="CGg-qS-EGA"/>
+                                    <action selector="nextFeedback:" destination="5zp-8x-geB" eventType="touchUpInside" id="Hvd-eg-pYO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qyB-K0-IMQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="cM5-2p-QjT" firstAttribute="leading" secondItem="qyB-K0-IMQ" secondAttribute="leading" constant="32" id="33c-wc-17W"/>
                             <constraint firstItem="wjn-Te-aj0" firstAttribute="top" secondItem="D4K-rV-VYc" secondAttribute="bottom" constant="8" id="5oc-mx-YZe"/>
+                            <constraint firstItem="qyB-K0-IMQ" firstAttribute="bottom" secondItem="QOu-UI-2mj" secondAttribute="bottom" constant="32" id="6cH-bW-Jkz"/>
                             <constraint firstItem="qyB-K0-IMQ" firstAttribute="trailing" secondItem="cM5-2p-QjT" secondAttribute="trailing" constant="32" id="7eV-md-Hk8"/>
                             <constraint firstItem="vLA-ih-sIE" firstAttribute="top" secondItem="cM5-2p-QjT" secondAttribute="bottom" constant="16" id="8gb-lu-dn9"/>
                             <constraint firstItem="iE8-w7-7Xm" firstAttribute="leading" secondItem="qyB-K0-IMQ" secondAttribute="leading" constant="32" id="ANG-jm-hrw"/>
@@ -556,6 +571,7 @@
                             <constraint firstItem="D4K-rV-VYc" firstAttribute="leading" secondItem="qyB-K0-IMQ" secondAttribute="leading" constant="32" id="L0E-eY-b0n"/>
                             <constraint firstItem="Qjp-xh-VGA" firstAttribute="top" secondItem="7NO-bF-jWG" secondAttribute="bottom" constant="16" id="M3w-y9-XVI"/>
                             <constraint firstItem="7NO-bF-jWG" firstAttribute="leading" secondItem="qyB-K0-IMQ" secondAttribute="leading" constant="32" id="MZo-Bs-H3a"/>
+                            <constraint firstItem="QOu-UI-2mj" firstAttribute="leading" secondItem="qyB-K0-IMQ" secondAttribute="leading" constant="32" id="OAg-aW-WJ4"/>
                             <constraint firstItem="cM5-2p-QjT" firstAttribute="top" secondItem="wjn-Te-aj0" secondAttribute="bottom" constant="8" id="RE0-h9-cR3"/>
                             <constraint firstItem="fvF-PC-RqH" firstAttribute="top" secondItem="qyB-K0-IMQ" secondAttribute="top" constant="16" id="S1A-jC-PDl"/>
                             <constraint firstItem="wjn-Te-aj0" firstAttribute="leading" secondItem="qyB-K0-IMQ" secondAttribute="leading" constant="32" id="S4Z-cR-0Jl"/>
@@ -564,8 +580,10 @@
                             <constraint firstItem="qyB-K0-IMQ" firstAttribute="trailing" secondItem="Qjp-xh-VGA" secondAttribute="trailing" constant="32" id="WQo-oZ-Oq5"/>
                             <constraint firstItem="vLA-ih-sIE" firstAttribute="leading" secondItem="qyB-K0-IMQ" secondAttribute="leading" constant="32" id="XSA-W1-PDq"/>
                             <constraint firstItem="7NO-bF-jWG" firstAttribute="top" secondItem="vLA-ih-sIE" secondAttribute="bottom" constant="8" id="azx-6f-Kw2"/>
-                            <constraint firstItem="qyB-K0-IMQ" firstAttribute="bottom" secondItem="iE8-w7-7Xm" secondAttribute="bottom" constant="32" id="dIf-Xv-6FS"/>
+                            <constraint firstItem="qyB-K0-IMQ" firstAttribute="trailing" secondItem="QOu-UI-2mj" secondAttribute="trailing" constant="32" id="cju-FR-hDL"/>
+                            <constraint firstItem="qyB-K0-IMQ" firstAttribute="bottom" secondItem="iE8-w7-7Xm" secondAttribute="bottom" constant="92" id="dIf-Xv-6FS"/>
                             <constraint firstItem="D4K-rV-VYc" firstAttribute="top" secondItem="fvF-PC-RqH" secondAttribute="bottom" constant="8" id="kQx-De-tFy"/>
+                            <constraint firstItem="QOu-UI-2mj" firstAttribute="top" secondItem="iE8-w7-7Xm" secondAttribute="bottom" constant="20" id="lB5-AK-7u4"/>
                             <constraint firstItem="qyB-K0-IMQ" firstAttribute="trailing" secondItem="wjn-Te-aj0" secondAttribute="trailing" constant="32" id="lE7-98-Ej3"/>
                             <constraint firstItem="qyB-K0-IMQ" firstAttribute="trailing" secondItem="vLA-ih-sIE" secondAttribute="trailing" constant="32" id="o2j-2p-XJJ"/>
                             <constraint firstItem="qyB-K0-IMQ" firstAttribute="trailing" secondItem="7NO-bF-jWG" secondAttribute="trailing" constant="32" id="pXf-Oc-M97"/>
@@ -577,11 +595,14 @@
                     <navigationItem key="navigationItem" title="Feedback" id="7VA-Tc-gYA"/>
                     <connections>
                         <outlet property="buttonNextFeedback" destination="iE8-w7-7Xm" id="Rz7-XL-mqD"/>
+                        <outlet property="correctAnswerLabel" destination="vLA-ih-sIE" id="gGK-7U-9a8"/>
+                        <outlet property="feedbackLabel" destination="Qjp-xh-VGA" id="f5N-i7-SVQ"/>
                         <outlet property="labelCorrect" destination="7NO-bF-jWG" id="ohk-7D-hDn"/>
                         <outlet property="labelQuestion" destination="D4K-rV-VYc" id="MVM-eg-glm"/>
                         <outlet property="labelQuestionNumber" destination="fvF-PC-RqH" id="08s-j0-t4C"/>
                         <outlet property="labelSelected" destination="cM5-2p-QjT" id="BKr-M1-qo0"/>
                         <outlet property="lableFeedback" destination="cJy-7o-hxE" id="ITo-iR-LiT"/>
+                        <outlet property="yourAnswerLabel" destination="wjn-Te-aj0" id="nbr-Um-mZ0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WcQ-g0-COj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
