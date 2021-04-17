@@ -23,6 +23,12 @@
 		B4062C222628740B00AB748A /* HomeHero.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = B4062C1C2628732C00AB748A /* HomeHero.MP4 */; };
 		B4062C2626287A1700AB748A /* LoopVideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4062C2526287A1700AB748A /* LoopVideoPlayerView.swift */; };
 		B4062C2926287E9500AB748A /* LocalVideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4062C2826287E9500AB748A /* LocalVideoPlayerView.swift */; };
+		B4062C30262B2C4000AB748A /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4062C2F262B2C4000AB748A /* Chapter.swift */; };
+		B4062C34262B2E2500AB748A /* ChapterCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4062C33262B2E2500AB748A /* ChapterCardView.swift */; };
+		B4062C37262B2F5400AB748A /* ClimateChangeC1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B4062C36262B2F4E00AB748A /* ClimateChangeC1.mp4 */; };
+		B4062C3A262B32F500AB748A /* ChapterStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4062C39262B32F500AB748A /* ChapterStore.swift */; };
+		B4062C3D262B37F900AB748A /* CircleProcessBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4062C3C262B37F900AB748A /* CircleProcessBarView.swift */; };
+		B4062C40262B43F800AB748A /* ChapterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4062C3F262B43F800AB748A /* ChapterDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +48,12 @@
 		B4062C1C2628732C00AB748A /* HomeHero.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = HomeHero.MP4; sourceTree = "<group>"; };
 		B4062C2526287A1700AB748A /* LoopVideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopVideoPlayerView.swift; sourceTree = "<group>"; };
 		B4062C2826287E9500AB748A /* LocalVideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalVideoPlayerView.swift; sourceTree = "<group>"; };
+		B4062C2F262B2C4000AB748A /* Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
+		B4062C33262B2E2500AB748A /* ChapterCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterCardView.swift; sourceTree = "<group>"; };
+		B4062C36262B2F4E00AB748A /* ClimateChangeC1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ClimateChangeC1.mp4; sourceTree = "<group>"; };
+		B4062C39262B32F500AB748A /* ChapterStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterStore.swift; sourceTree = "<group>"; };
+		B4062C3C262B37F900AB748A /* CircleProcessBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProcessBarView.swift; sourceTree = "<group>"; };
+		B4062C3F262B43F800AB748A /* ChapterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +113,8 @@
 			children = (
 				B4062BF82627F71400AB748A /* QuizModel.swift */,
 				B4062C022627F87D00AB748A /* QuizData.swift */,
+				B4062C2F262B2C4000AB748A /* Chapter.swift */,
+				B4062C39262B32F500AB748A /* ChapterStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -129,6 +143,9 @@
 			isa = PBXGroup;
 			children = (
 				B4062C0C2627FDC000AB748A /* QuizView.swift */,
+				B4062C3F262B43F800AB748A /* ChapterDetailView.swift */,
+				B4062C33262B2E2500AB748A /* ChapterCardView.swift */,
+				B4062C3C262B37F900AB748A /* CircleProcessBarView.swift */,
 			);
 			path = QuizViewGroup;
 			sourceTree = "<group>";
@@ -145,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				B4062C1C2628732C00AB748A /* HomeHero.MP4 */,
+				B4062C36262B2F4E00AB748A /* ClimateChangeC1.mp4 */,
 			);
 			path = Files;
 			sourceTree = "<group>";
@@ -226,6 +244,7 @@
 				B4062C222628740B00AB748A /* HomeHero.MP4 in Resources */,
 				B4062BED2627F63A00AB748A /* Preview Assets.xcassets in Resources */,
 				B4062BEA2627F63A00AB748A /* Assets.xcassets in Resources */,
+				B4062C37262B2F5400AB748A /* ClimateChangeC1.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,13 +256,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4062C062627F8EA00AB748A /* QuizDatabase.swift in Sources */,
+				B4062C3A262B32F500AB748A /* ChapterStore.swift in Sources */,
 				B4062C032627F87D00AB748A /* QuizData.swift in Sources */,
 				B4062BE82627F63A00AB748A /* ContentView.swift in Sources */,
+				B4062C30262B2C4000AB748A /* Chapter.swift in Sources */,
 				B4062C092627FD8400AB748A /* HomeView.swift in Sources */,
 				B4062C2626287A1700AB748A /* LoopVideoPlayerView.swift in Sources */,
+				B4062C40262B43F800AB748A /* ChapterDetailView.swift in Sources */,
 				B4062C112627FDEB00AB748A /* TestView.swift in Sources */,
 				B4062C0D2627FDC000AB748A /* QuizView.swift in Sources */,
 				B4062C2926287E9500AB748A /* LocalVideoPlayerView.swift in Sources */,
+				B4062C3D262B37F900AB748A /* CircleProcessBarView.swift in Sources */,
+				B4062C34262B2E2500AB748A /* ChapterCardView.swift in Sources */,
 				B4062BE62627F63A00AB748A /* WeatheroApp.swift in Sources */,
 				B4062BF92627F71400AB748A /* QuizModel.swift in Sources */,
 				B4062C142627FE2600AB748A /* SummaryView.swift in Sources */,

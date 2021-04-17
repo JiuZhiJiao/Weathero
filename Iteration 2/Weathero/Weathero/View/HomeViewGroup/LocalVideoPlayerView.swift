@@ -15,7 +15,7 @@ struct LocalVideoPlayerView: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> some UIViewController {
         let controller = AVPlayerViewController()
         
-        let bundle_url = Bundle.main.path(forResource: videoString, ofType: "MP4")
+        let bundle_url = Bundle.main.path(forResource: videoString, ofType: "mp4")
         let video_url = URL(fileURLWithPath: bundle_url!)
         let player = AVPlayer(url: video_url)
         
@@ -23,7 +23,7 @@ struct LocalVideoPlayerView: UIViewControllerRepresentable {
         
         controller.showsPlaybackControls = true
         controller.player?.isMuted = false
-        controller.player?.play()
+        //controller.player?.play()
         
         return controller
     }

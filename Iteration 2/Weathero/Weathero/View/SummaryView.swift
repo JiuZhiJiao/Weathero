@@ -9,7 +9,9 @@ import SwiftUI
 
 struct SummaryView: View {
     var body: some View {
-        Text("Summary View")
+        Text("Coming soon...")
+            .foregroundColor(.gray)
+            .font(.title)
     }
 }
 

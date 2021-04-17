@@ -28,7 +28,7 @@ struct HomeView: View {
                 
                 VStack{
                     Button(action: {self.selection = 1}) {
-                        Text("Help Me")
+                        Text("Let's Get Started")
                             .font(.system(.title2, design: .rounded))
                             .fontWeight(.semibold)
                             .foregroundColor(.white)
