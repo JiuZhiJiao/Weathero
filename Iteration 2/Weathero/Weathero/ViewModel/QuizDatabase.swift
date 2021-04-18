@@ -75,7 +75,7 @@ extension QuizDatabase {
     }
     
     // update the selected quiz and set the selected answer
-    func update(id: Int, selected: Int) {
+    func selectedAnswer(id: Int, selected: Int) {
         objectWillChange.send()
         do {
             let realm = try Realm()
@@ -85,5 +85,17 @@ extension QuizDatabase {
         } catch let error {
             print(error.localizedDescription)
         }
+    }
+    
+    // return all quizes with string
+    func getQuiz(topic: String) -> [QuizModel] {
+        var requiredQuiz = [QuizModel]()
+        for quiz in quizes {
+            if quiz.topic == topic && quiz.id <= 9 {
+                requiredQuiz.append(quiz)
+            }
+        }
+        
+        return requiredQuiz
     }
 }

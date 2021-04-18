@@ -29,6 +29,16 @@
 		B4062C3A262B32F500AB748A /* ChapterStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4062C39262B32F500AB748A /* ChapterStore.swift */; };
 		B4062C3D262B37F900AB748A /* CircleProcessBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4062C3C262B37F900AB748A /* CircleProcessBarView.swift */; };
 		B4062C40262B43F800AB748A /* ChapterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4062C3F262B43F800AB748A /* ChapterDetailView.swift */; };
+		B4062C43262BF32A00AB748A /* ClimateChangeC2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B4062C42262BF32A00AB748A /* ClimateChangeC2.mp4 */; };
+		B4062C46262C0C4700AB748A /* ChapterQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4062C45262C0C4700AB748A /* ChapterQuizView.swift */; };
+		B4062C49262C0FC200AB748A /* ClimateChangeC3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B4062C48262C0FC200AB748A /* ClimateChangeC3.mp4 */; };
+		B46002B1262C190600B61947 /* ChapterQuizDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46002B0262C190600B61947 /* ChapterQuizDetailView.swift */; };
+		B46002B4262C2B0900B61947 /* TestCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46002B3262C2B0900B61947 /* TestCardView.swift */; };
+		B46002B7262C2BFF00B61947 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46002B6262C2BFF00B61947 /* Test.swift */; };
+		B46002BA262C2C0800B61947 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46002B9262C2C0800B61947 /* Hero.swift */; };
+		B46002BD262C2CE800B61947 /* HeroStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46002BC262C2CE800B61947 /* HeroStore.swift */; };
+		B46002C0262C2DD200B61947 /* TestStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46002BF262C2DD200B61947 /* TestStore.swift */; };
+		B46002C3262C3A3000B61947 /* DroughtsC1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B46002C2262C3A3000B61947 /* DroughtsC1.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +64,16 @@
 		B4062C39262B32F500AB748A /* ChapterStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterStore.swift; sourceTree = "<group>"; };
 		B4062C3C262B37F900AB748A /* CircleProcessBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProcessBarView.swift; sourceTree = "<group>"; };
 		B4062C3F262B43F800AB748A /* ChapterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterDetailView.swift; sourceTree = "<group>"; };
+		B4062C42262BF32A00AB748A /* ClimateChangeC2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ClimateChangeC2.mp4; sourceTree = "<group>"; };
+		B4062C45262C0C4700AB748A /* ChapterQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterQuizView.swift; sourceTree = "<group>"; };
+		B4062C48262C0FC200AB748A /* ClimateChangeC3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ClimateChangeC3.mp4; sourceTree = "<group>"; };
+		B46002B0262C190600B61947 /* ChapterQuizDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterQuizDetailView.swift; sourceTree = "<group>"; };
+		B46002B3262C2B0900B61947 /* TestCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCardView.swift; sourceTree = "<group>"; };
+		B46002B6262C2BFF00B61947 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		B46002B9262C2C0800B61947 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		B46002BC262C2CE800B61947 /* HeroStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroStore.swift; sourceTree = "<group>"; };
+		B46002BF262C2DD200B61947 /* TestStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStore.swift; sourceTree = "<group>"; };
+		B46002C2262C3A3000B61947 /* DroughtsC1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = DroughtsC1.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +135,10 @@
 				B4062C022627F87D00AB748A /* QuizData.swift */,
 				B4062C2F262B2C4000AB748A /* Chapter.swift */,
 				B4062C39262B32F500AB748A /* ChapterStore.swift */,
+				B46002B6262C2BFF00B61947 /* Test.swift */,
+				B46002BF262C2DD200B61947 /* TestStore.swift */,
+				B46002B9262C2C0800B61947 /* Hero.swift */,
+				B46002BC262C2CE800B61947 /* HeroStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -144,6 +168,8 @@
 			children = (
 				B4062C0C2627FDC000AB748A /* QuizView.swift */,
 				B4062C3F262B43F800AB748A /* ChapterDetailView.swift */,
+				B4062C45262C0C4700AB748A /* ChapterQuizView.swift */,
+				B46002B0262C190600B61947 /* ChapterQuizDetailView.swift */,
 				B4062C33262B2E2500AB748A /* ChapterCardView.swift */,
 				B4062C3C262B37F900AB748A /* CircleProcessBarView.swift */,
 			);
@@ -154,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				B4062C102627FDEB00AB748A /* TestView.swift */,
+				B46002B3262C2B0900B61947 /* TestCardView.swift */,
 			);
 			path = TestViewGroup;
 			sourceTree = "<group>";
@@ -163,6 +190,9 @@
 			children = (
 				B4062C1C2628732C00AB748A /* HomeHero.MP4 */,
 				B4062C36262B2F4E00AB748A /* ClimateChangeC1.mp4 */,
+				B4062C42262BF32A00AB748A /* ClimateChangeC2.mp4 */,
+				B4062C48262C0FC200AB748A /* ClimateChangeC3.mp4 */,
+				B46002C2262C3A3000B61947 /* DroughtsC1.mp4 */,
 			);
 			path = Files;
 			sourceTree = "<group>";
@@ -242,9 +272,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4062C222628740B00AB748A /* HomeHero.MP4 in Resources */,
+				B4062C43262BF32A00AB748A /* ClimateChangeC2.mp4 in Resources */,
 				B4062BED2627F63A00AB748A /* Preview Assets.xcassets in Resources */,
+				B46002C3262C3A3000B61947 /* DroughtsC1.mp4 in Resources */,
 				B4062BEA2627F63A00AB748A /* Assets.xcassets in Resources */,
 				B4062C37262B2F5400AB748A /* ClimateChangeC1.mp4 in Resources */,
+				B4062C49262C0FC200AB748A /* ClimateChangeC3.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +290,8 @@
 			files = (
 				B4062C062627F8EA00AB748A /* QuizDatabase.swift in Sources */,
 				B4062C3A262B32F500AB748A /* ChapterStore.swift in Sources */,
+				B46002B4262C2B0900B61947 /* TestCardView.swift in Sources */,
+				B46002B1262C190600B61947 /* ChapterQuizDetailView.swift in Sources */,
 				B4062C032627F87D00AB748A /* QuizData.swift in Sources */,
 				B4062BE82627F63A00AB748A /* ContentView.swift in Sources */,
 				B4062C30262B2C4000AB748A /* Chapter.swift in Sources */,
@@ -264,11 +299,16 @@
 				B4062C2626287A1700AB748A /* LoopVideoPlayerView.swift in Sources */,
 				B4062C40262B43F800AB748A /* ChapterDetailView.swift in Sources */,
 				B4062C112627FDEB00AB748A /* TestView.swift in Sources */,
+				B46002BA262C2C0800B61947 /* Hero.swift in Sources */,
 				B4062C0D2627FDC000AB748A /* QuizView.swift in Sources */,
 				B4062C2926287E9500AB748A /* LocalVideoPlayerView.swift in Sources */,
 				B4062C3D262B37F900AB748A /* CircleProcessBarView.swift in Sources */,
+				B46002BD262C2CE800B61947 /* HeroStore.swift in Sources */,
+				B4062C46262C0C4700AB748A /* ChapterQuizView.swift in Sources */,
 				B4062C34262B2E2500AB748A /* ChapterCardView.swift in Sources */,
 				B4062BE62627F63A00AB748A /* WeatheroApp.swift in Sources */,
+				B46002B7262C2BFF00B61947 /* Test.swift in Sources */,
+				B46002C0262C2DD200B61947 /* TestStore.swift in Sources */,
 				B4062BF92627F71400AB748A /* QuizModel.swift in Sources */,
 				B4062C142627FE2600AB748A /* SummaryView.swift in Sources */,
 			);

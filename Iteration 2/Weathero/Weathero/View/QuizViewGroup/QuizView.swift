@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct QuizView: View {
+    @EnvironmentObject var quizDB: QuizDatabase
+    
     var body: some View {
-//        ChapterCardView(chapter: chapters[0])
-//            .frame(width: 320, height: 350)
         
         NavigationView {
             ScrollView(.vertical) {
@@ -37,7 +37,7 @@ struct QuizView: View {
                                 }
                                 
                                 // Coming Soon Chapter
-                                ChapterCardView(progress: 0.0, chapter: Chapter(id: 13, topic: "", chapterNO: 3, title: "Coming Soon", subtitle: "New Chapter will be uploaded soon", image: "ComingSoon", video: "", content: ""))
+                                ChapterCardView(progress: 0.0, chapter: Chapter(id: 14, topic: "", chapterNO: 4, title: "Coming Soon", subtitle: "New Chapter will be uploaded soon", image: "ComingSoon", video: "", content: ""))
                                     .frame(width: 360, height: 380)
                                     .padding()
                                 Spacer()
@@ -91,19 +91,19 @@ struct QuizView: View {
                             HStack {
                                 Spacer()
                                     .frame(width: 15)
-                                ForEach(chapters) { chapter in
-                                    if chapter.topic == "Floods"{
-                                        NavigationLink(destination: ChapterDetailView(chapter: chapter)) {
-                                            ChapterCardView(progress: 0.5, chapter: chapter)
-                                                .frame(width: 360, height: 380)
-                                                .padding(5)
-                                        }
-                                        .buttonStyle(PlainButtonStyle())
-                                    }
-                                }
+//                                ForEach(chapters) { chapter in
+//                                    if chapter.topic == "Floods"{
+//                                        NavigationLink(destination: ChapterDetailView(chapter: chapter)) {
+//                                            ChapterCardView(progress: 0.5, chapter: chapter)
+//                                                .frame(width: 360, height: 380)
+//                                                .padding(5)
+//                                        }
+//                                        .buttonStyle(PlainButtonStyle())
+//                                    }
+//                                }
                                 
                                 // Coming Soon Chapter
-                                ChapterCardView(progress: 0.0, chapter: Chapter(id: 32, topic: "", chapterNO: 2, title: "Coming Soon", subtitle: "New Chapter will be uploaded soon", image: "ComingSoon", video: "", content: ""))
+                                ChapterCardView(progress: 0.0, chapter: Chapter(id: 32, topic: "", chapterNO: 1, title: "Coming Soon", subtitle: "New Chapter will be uploaded soon", image: "ComingSoon", video: "", content: ""))
                                     .frame(width: 360, height: 380)
                                     .padding()
                                 Spacer()

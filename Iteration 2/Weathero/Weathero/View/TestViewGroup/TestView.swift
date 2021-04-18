@@ -9,7 +9,19 @@ import SwiftUI
 
 struct TestView: View {
     var body: some View {
-        Text("Test View")
+        NavigationView {
+            List {
+                Section(header: Text("Weathero Kat").font(.title2).textCase(.none)) {
+                    TestCardView(test: tests[0])
+                    TestCardView(test: tests[1])
+                }
+                Section(header: Text("Weathero Steve").font(.title2).textCase(.none)) {
+                    TestCardView(test: tests[2])
+                }
+            }
+            .listStyle(InsetGroupedListStyle())
+            .navigationTitle("Test")
+        }
     }
 }
 

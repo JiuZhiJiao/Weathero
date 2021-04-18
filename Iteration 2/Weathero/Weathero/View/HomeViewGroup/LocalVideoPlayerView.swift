@@ -11,9 +11,9 @@ import AVKit
 struct LocalVideoPlayerView: UIViewControllerRepresentable {
     
     let videoString: String
+    let controller : AVPlayerViewController
     
     func makeUIViewController(context: Context) -> some UIViewController {
-        let controller = AVPlayerViewController()
         
         let bundle_url = Bundle.main.path(forResource: videoString, ofType: "mp4")
         let video_url = URL(fileURLWithPath: bundle_url!)
