@@ -7,9 +7,15 @@
 
 import Foundation
 
+struct openData: Decodable{
+    var emissions: [Float]
+    var avg: [Float]
+    var slt: [Float]
+}
 
 
-struct emissions{
+
+struct emissions: Decodable{
     var year: Int
     var population: Int
     var cgce: Int
@@ -23,13 +29,13 @@ struct emissions{
     var totalEmissions: Int
 }
 
-struct avgRainfallTemperture {
+struct avgRainfallTemperture: Decodable {
     var year: Int
     var rainfall: Float
     var temperture: Float
 }
 
-struct seaLandTemp {
+struct seaLandTemp: Decodable {
     var year: Int
     var seaTemp: Float
     var landTemp: Float
