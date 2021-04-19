@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21A6FF1B262E02B000556AAC /* OpenDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6FF1A262E02B000556AAC /* OpenDataModel.swift */; };
 		B4062BE62627F63A00AB748A /* WeatheroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4062BE52627F63A00AB748A /* WeatheroApp.swift */; };
 		B4062BE82627F63A00AB748A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4062BE72627F63A00AB748A /* ContentView.swift */; };
 		B4062BEA2627F63A00AB748A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4062BE92627F63A00AB748A /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21A6FF1A262E02B000556AAC /* OpenDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenDataModel.swift; sourceTree = "<group>"; };
 		B4062BE22627F63A00AB748A /* Weathero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weathero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4062BE52627F63A00AB748A /* WeatheroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatheroApp.swift; sourceTree = "<group>"; };
 		B4062BE72627F63A00AB748A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				B46002BF262C2DD200B61947 /* TestStore.swift */,
 				B46002B9262C2C0800B61947 /* Hero.swift */,
 				B46002BC262C2CE800B61947 /* HeroStore.swift */,
+				21A6FF1A262E02B000556AAC /* OpenDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				B4062C062627F8EA00AB748A /* QuizDatabase.swift in Sources */,
 				B4062C3A262B32F500AB748A /* ChapterStore.swift in Sources */,
 				B46002B4262C2B0900B61947 /* TestCardView.swift in Sources */,
+				21A6FF1B262E02B000556AAC /* OpenDataModel.swift in Sources */,
 				B46002B1262C190600B61947 /* ChapterQuizDetailView.swift in Sources */,
 				B4062C032627F87D00AB748A /* QuizData.swift in Sources */,
 				B4062BE82627F63A00AB748A /* ContentView.swift in Sources */,
