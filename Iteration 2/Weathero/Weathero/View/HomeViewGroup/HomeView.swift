@@ -18,8 +18,8 @@ struct HomeView: View {
                         .cornerRadius(10)
                         .padding(.bottom)
                     
-                    Text("Hi, I am weather your weather hero. I am on mission to save the world from floods and droughts. How about you help me do that?")
-                    Text("This is a journey to becaom a weather hero")
+                    Text("Hi, I am weathero your weather hero. I am on mission to save the world from floods and droughts. \n\nHow about you help me do that?")
+                    Text("This is a journey to become a weather hero")
                     Text("All you must do is watch a few videos, take a quiz, and get ready to implement it in your daily life. I need you. Come help me!")
                     
                     

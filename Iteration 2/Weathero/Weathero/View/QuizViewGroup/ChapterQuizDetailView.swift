@@ -22,6 +22,7 @@ struct ChapterQuizDetailView: View {
                     .fontWeight(.bold)
                     .foregroundColor(.black)
                     .padding(.top, 25)
+                    .multilineTextAlignment(.leading)
                 if quiz.image != "ImageName" {
                     Image(quiz.image)
                         .resizable()
