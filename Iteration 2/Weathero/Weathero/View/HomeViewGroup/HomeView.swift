@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftUICharts
 
 
 struct HomeView: View {
@@ -28,7 +29,7 @@ struct HomeView: View {
                 .padding(.init(top: 16, leading: 32, bottom: 0, trailing: 32))
                 
                 VStack{
-                    Button(action: {self.selection = 1; getOpenData()}) {
+                    Button(action: {self.selection = 1}) {
                         Text("Let's Get Started")
                             .font(.system(.title2, design: .rounded))
                             .fontWeight(.semibold)
@@ -82,7 +83,7 @@ func getOpenData(){
         
     })
     task.resume()
-    
+
 }
 
 
