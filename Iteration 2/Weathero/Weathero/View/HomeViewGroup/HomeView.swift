@@ -28,7 +28,7 @@ struct HomeView: View {
                 .padding(.init(top: 16, leading: 32, bottom: 0, trailing: 32))
                 
                 VStack{
-                    Button(action: {self.selection = 1}) {
+                    Button(action: {self.selection = 1; getOpenData()}) {
                         Text("Let's Get Started")
                             .font(.system(.title2, design: .rounded))
                             .fontWeight(.semibold)
@@ -78,7 +78,7 @@ func getOpenData(){
         let decoder = JSONDecoder()
         let beer = try! decoder.decode(openData.self, from: data!)
         
-        
+        print(beer.avgRainfallTemperture.count)
         
     })
     task.resume()

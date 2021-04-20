@@ -8,9 +8,9 @@
 import Foundation
 
 struct openData: Decodable{
-    var emissions: [Float]
-    var avg: [Float]
-    var slt: [Float]
+    var emissions: [emissions]
+    var avgRainfallTemperture: [avgRainfallTemperture]
+    var seaLandTemp: [seaLandTemp]
 }
 
 
