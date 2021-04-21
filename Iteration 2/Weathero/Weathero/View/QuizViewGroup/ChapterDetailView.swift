@@ -15,7 +15,7 @@ struct ChapterDetailView: View {
     private let controller = AVPlayerViewController()
     
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack() {
             LocalVideoPlayerView(videoString: chapter.video, controller: controller)
                 .frame(width: width, height: width * 0.56)
                 .onDisappear() {
@@ -32,26 +32,37 @@ struct ChapterDetailView: View {
                         .padding(.bottom)
                     
                     Text(chapter.content)
-                        .font(.title2)
+                        .font(.custom("SF Compact Rounded", size: 20))
+                        .lineSpacing(3)
                         .multilineTextAlignment(.leading)
-                        .lineSpacing(5)
                 }
                 .padding()
                 
-                VStack(alignment:.center) {
-                    NavigationLink(destination: ChapterQuizView(chapter: chapter)) {
-                        Text("Answer Quiz")
-                            .font(.system(.title2, design: .rounded))
-                            .fontWeight(.semibold)
-                            .foregroundColor(.white)
-                            .frame(width: 300, height: 50)
-                            .background(Rectangle().fill(Color.blue))
-                            .cornerRadius(10)
-                            .shadow(radius: 3)
-                    }
-                }
-                .padding()
             }
+            
+            VStack(alignment: .center) {
+                NavigationLink(destination: AnswerQuizView(chapter: chapter)) {
+//                    Text("Answer Quiz")
+//                        .font(.system(.title2, design: .rounded))
+//                        .fontWeight(.bold)
+//                        .frame(width:200, height: 25)
+//                        .foregroundColor(.blue)
+//                        .background(Color.white)
+//                        .padding(5)
+//                        .overlay(
+//                            RoundedRectangle(cornerRadius: 40)
+//                                .stroke(Color.blue, lineWidth: 3)
+//                        )
+                    Text("Answer Quiz")
+                        .font(.system(.title2, design: .rounded))
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                        .padding(10)
+                        .background(Color.blue)
+                        .cornerRadius(20)
+                }
+            }
+            .padding(.bottom, 5)
             //ProgressView(value: 0.6, total: 1.0)
             
         }

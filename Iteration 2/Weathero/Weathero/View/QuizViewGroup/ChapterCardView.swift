@@ -19,23 +19,27 @@ struct ChapterCardView: View {
             Text("Chapter \(chapter.chapterNO)")
                 .font(.subheadline)
                 .foregroundColor(.blue)
-            HStack {
-                VStack {
-                    Text(chapter.title)
-                        .font(.title)
-                        .fontWeight(.semibold)
-                }
-                Spacer()
-                CircleProcessBarView(progress: $progress)
-                    .frame(width: 35, height: 35)
-                Spacer()
-                    .frame(width: 10)
-            }
+            Text(chapter.title)
+                .font(.title)
+                .fontWeight(.semibold)
+//            HStack {
+//                VStack {
+//                    Text(chapter.title)
+//                        .font(.title)
+//                        .fontWeight(.semibold)
+//                }
+//                Spacer()
+//                CircleProcessBarView(progress: $progress)
+//                    .frame(width: 35, height: 35)
+//                Spacer()
+//                    .frame(width: 10)
+//            }
             Text(chapter.subtitle)
                 .font(.title2)
                 .foregroundColor(.gray)
-                .multilineTextAlignment(.leading)
+                .lineLimit(1)
             Spacer()
+                .frame(height:10)
             Image(chapter.image)
                 .resizable()
                 .scaledToFill()

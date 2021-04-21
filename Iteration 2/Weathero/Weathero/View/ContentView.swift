@@ -23,10 +23,10 @@ struct ContentView: View {
                     Text("Quiz")
                 }
                 .tag(1)
-            TestView()
+            StoryView()
                 .tabItem {
-                    Image(systemName: "questionmark.circle")
-                    Text("Test")
+                    Image(systemName: "chart.pie")
+                    Text("Story")
                 }
             SummaryView()
                 .tabItem {
