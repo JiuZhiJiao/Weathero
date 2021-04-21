@@ -43,6 +43,7 @@ struct StoryView: View {
                     
                     
                     // Pie Chart
+                    /*
                     Group {
                         Divider()
                         Text("Pie Chart")
@@ -54,7 +55,7 @@ struct StoryView: View {
                         Text("You can see in the below pie chart that CO2 emissions by our cars is almost more than half of the total emissions.")
                             .font(.custom("SF Compact Rounded", size: 20))
                             .lineSpacing(3)
-                    }
+                    }*/
                     
                     
                     // MultiLine Chart
@@ -105,7 +106,9 @@ struct StoryView: View {
             }
             .navigationTitle("Story")
             .onAppear(perform: {
-                self.getOpenData()
+                if od?.avgRainfallTemperture == nil{
+                    self.getOpenData()
+                }
             })
         }
     }
@@ -139,15 +142,21 @@ struct StoryView: View {
             let opendata = try! decoder.decode(openData.self, from: data!)
             od = opendata
             
+            
+            chart1data = []
             for item in opendata.emissions{
                 chart1data.append((String(item.year),item.totalEmissions))
             }
             
+            chart3data1 = []
+            chart3data2 = []
             for item in opendata.seaLandTemp{
                 chart3data1.append(Double(item.seaTemp))
                 chart3data2.append(Double(item.landTemp))
             }
             
+            chart4data = []
+            chart5data = []
             for item in opendata.avgRainfallTemperture{
                 chart4data.append(Double(item.rainfall))
                 chart5data.append(Double(item.temperture))
