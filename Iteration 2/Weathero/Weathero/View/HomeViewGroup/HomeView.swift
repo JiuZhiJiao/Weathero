@@ -75,38 +75,6 @@ struct HomeView: View {
     }
 }
 
-func getOpenData(){
-    let urlComp = NSURLComponents(string: "https://7gdpsmuu74.execute-api.ap-southeast-2.amazonaws.com/iteration2/opendata")!
-    
-    let params = [
-        "Content-Type": "application/json",
-        "Accept": "application/json",
-        "x-api-key": "bFZsTHexQ59k2WsFWODRF7QuI0d23p4m7HRCc925"
-    ]
-    
-    
-    
-    var urlRequest = URLRequest(url: urlComp.url!)
-    urlRequest.httpMethod = "GET"
-    urlRequest.allHTTPHeaderFields = params
-    let config = URLSessionConfiguration.default
-    let session = URLSession(configuration: config)
-    
-    let task = session.dataTask(with: urlRequest, completionHandler: { (data, response, error) in
-        //let responseString = String(data: data!, encoding: .utf8)
-        //print(responseString as Any)
-        
-        
-        let jsonData = String(data: data!, encoding: .utf8)
-        let decoder = JSONDecoder()
-        let beer = try! decoder.decode(openData.self, from: data!)
-        
-        print(beer.avgRainfallTemperture.count)
-        
-    })
-    task.resume()
-
-}
 
 
 
