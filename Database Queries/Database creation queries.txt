@@ -1,0 +1,79 @@
+-- MySQL Workbench Forward Engineering
+
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
+
+-- -----------------------------------------------------
+-- Schema mydb
+-- -----------------------------------------------------
+-- -----------------------------------------------------
+-- Schema weathero
+-- -----------------------------------------------------
+DROP SCHEMA IF EXISTS `weathero` ;
+
+-- -----------------------------------------------------
+-- Schema weathero
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `weathero` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci ;
+USE `weathero` ;
+
+-- -----------------------------------------------------
+-- Table `weathero`.`Avg_Rainfall_Temperture`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `weathero`.`Avg_Rainfall_Temperture` ;
+
+CREATE TABLE IF NOT EXISTS `weathero`.`Avg_Rainfall_Temperture` (
+  `Year` INT NOT NULL,
+  `avg_rainfall` FLOAT NOT NULL,
+  `avg_temperature` FLOAT NOT NULL,
+  PRIMARY KEY (`Year`),
+  UNIQUE INDEX `rt_id_UNIQUE` (`Year` ASC) VISIBLE)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
+
+
+-- -----------------------------------------------------
+-- Table `weathero`.`SeaLandTemp`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `weathero`.`SeaLandTemp` ;
+
+CREATE TABLE IF NOT EXISTS `weathero`.`SeaLandTemp` (
+  `Year` INT NOT NULL,
+  `sea_temp` FLOAT NOT NULL,
+  `land_air_temp` FLOAT NOT NULL,
+  PRIMARY KEY (`Year`),
+  UNIQUE INDEX `sl_id_UNIQUE` (`Year` ASC) VISIBLE)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
+
+
+-- -----------------------------------------------------
+-- Table `weathero`.`emissions`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `weathero`.`emissions` ;
+
+CREATE TABLE IF NOT EXISTS `weathero`.`emissions` (
+  `year` INT NOT NULL,
+  `population` INT NOT NULL,
+  `Commer_Gas_Consumption_Emission` INT NOT NULL,
+  `Distribution_of_Gas_Emission` INT NOT NULL,
+  `Vehicular_Emissions` INT NOT NULL,
+  `Railway_Emissions` INT NOT NULL,
+  `Boating_Emissions` INT NOT NULL,
+  `Aviation_Emissions` INT NOT NULL,
+  `SolidWaste_Emissions` INT NOT NULL,
+  `WasteWater_Treatment_Emissions` INT NOT NULL,
+  `Total_emissions` INT NOT NULL,
+  PRIMARY KEY (`year`),
+  UNIQUE INDEX `year_UNIQUE` (`year` ASC) VISIBLE)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
