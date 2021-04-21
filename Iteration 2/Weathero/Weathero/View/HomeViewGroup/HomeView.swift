@@ -53,7 +53,7 @@ struct HomeView: View {
                             .font(.system(.title2, design: .rounded))
                             .fontWeight(.bold)
                             .padding(5)
-                            .background(Color.white)
+                            //.background(Color.primary)
                             .frame(height: 20)
                             .padding(10)
                             .overlay(
