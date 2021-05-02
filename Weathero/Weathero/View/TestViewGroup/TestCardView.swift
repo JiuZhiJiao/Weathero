@@ -18,18 +18,17 @@ struct TestCardView: View {
             Spacer()
             VStack(alignment: .leading) {
                 Spacer()
-                VStack(alignment: .leading) {
-                    Text(test.topic)
-                        .font(.title)
-                        .bold()
-                    Text("Answer questions to collect the hero \(test.hero.name)")
-                        .font(.title3)
-                        .foregroundColor(.gray)
-                }
+                Text(test.topic)
+                    .font(.title)
+                    .bold()
                 Spacer()
-                VStack {
-                    ProgressView("Progress:", value: test.process, total: 1.0)
-                }
+                Text("Answer questions about \(test.topic) to collect the hero \(test.hero.name)")
+                    .font(.title3)
+                    .foregroundColor(.gray)
+//                Spacer()
+//                VStack {
+//                    ProgressView("Progress:", value: test.process, total: 1.0)
+//                }
                 Spacer()
             }
             .padding()

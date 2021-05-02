@@ -17,13 +17,19 @@ struct AnswerQuizFeedbackView: View {
     
     var body: some View {
         VStack {
+            VStack(alignment: .center) {
+                Text("↓ Drag down to close the Feedback ↓")
+                    .font(.caption2)
+                    .foregroundColor(.secondary)
+                    .padding(.vertical, 10)
+            }
             VStack(alignment: .leading) {
                 // Question content
                 Text("Question 0\(qid+1)")
                     .font(.title)
                     .fontWeight(.bold)
-                    .foregroundColor(.secondary)
-                    .padding(.top, 25)
+                    .foregroundColor(.primary)
+                    .padding(.top, 15)
                 Text(quizDB.getQuiz(topic: chapter.topic)[qid].content)
                     .font(.title3)
                     .fontWeight(.semibold)
@@ -35,7 +41,7 @@ struct AnswerQuizFeedbackView: View {
                 Text("Your Answer")
                     .font(.title2)
                     .fontWeight(.bold)
-                    .foregroundColor(.secondary)
+                    .foregroundColor(selected == quizDB.getQuiz(topic: chapter.topic)[qid].correct ? Color.green : Color.red)
                     .padding(.top, 25)
                 
                 switch selected {
@@ -80,7 +86,7 @@ struct AnswerQuizFeedbackView: View {
                 Text("Correct Answer")
                     .font(.title2)
                     .fontWeight(.bold)
-                    .foregroundColor(.secondary)
+                    .foregroundColor(.green)
                     .padding(.top, 25)
                 
                 switch quizDB.getQuiz(topic: chapter.topic)[qid].correct {
@@ -137,17 +143,12 @@ struct AnswerQuizFeedbackView: View {
             }
             .padding()
             Spacer()
-            VStack(alignment: .center) {
-                Text("Drag down to close the Feedback")
-                    .font(.caption2)
-                    .foregroundColor(.secondary)
-            }
         }
     }
 }
 
 struct AnswerQuizFeedbackView_Previews: PreviewProvider {
     static var previews: some View {
-        AnswerQuizFeedbackView(qid: .constant(1), selected: .constant(0), chapter: chapters[0])
+        AnswerQuizFeedbackView(qid: .constant(1), selected: .constant(1), chapter: chapters[0])
     }
 }

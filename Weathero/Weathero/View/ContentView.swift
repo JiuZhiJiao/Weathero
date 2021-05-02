@@ -17,16 +17,21 @@ struct ContentView: View {
                     Text("Home")
                 }
                 .tag(0)
+            StoryView()
+                .tabItem {
+                    Image(systemName: "chart.pie")
+                    Text("Story")
+                }
             QuizView()
                 .tabItem {
                     Image(systemName: "text.book.closed")
                     Text("Quiz")
                 }
                 .tag(1)
-            StoryView()
+            TestView()
                 .tabItem {
-                    Image(systemName: "chart.pie")
-                    Text("Story")
+                    Image(systemName: "questionmark.circle")
+                    Text("Test")
                 }
             SummaryView()
                 .tabItem {

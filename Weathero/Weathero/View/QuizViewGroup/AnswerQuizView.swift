@@ -21,7 +21,6 @@ struct AnswerQuizView: View {
             VStack {
                 AnswerQuizDetailView(qid: $qid, selected: $selected, flag: $flag, chapter: chapter)
             }
-            .padding(.bottom)
             
             // Button
             HStack(spacing: 15) {
@@ -84,8 +83,8 @@ struct AnswerQuizView: View {
                 })
                 
             }
+            .padding([.horizontal, .bottom])
         }
-        .padding()
         
     }
 }

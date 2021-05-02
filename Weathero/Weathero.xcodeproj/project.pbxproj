@@ -34,6 +34,9 @@
 		B4062C43262BF32A00AB748A /* ClimateChangeC2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B4062C42262BF32A00AB748A /* ClimateChangeC2.mp4 */; };
 		B4062C46262C0C4700AB748A /* ChapterQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4062C45262C0C4700AB748A /* ChapterQuizView.swift */; };
 		B4062C49262C0FC200AB748A /* ClimateChangeC3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B4062C48262C0FC200AB748A /* ClimateChangeC3.mp4 */; };
+		B44C2562263E7B3B00565EA7 /* TestQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44C2561263E7B3B00565EA7 /* TestQuizView.swift */; };
+		B44C2566263E7EC600565EA7 /* TestProcessBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44C2565263E7EC600565EA7 /* TestProcessBarView.swift */; };
+		B44C2569263E823800565EA7 /* TestQuizDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44C2568263E823800565EA7 /* TestQuizDetailView.swift */; };
 		B46002B1262C190600B61947 /* ChapterQuizDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46002B0262C190600B61947 /* ChapterQuizDetailView.swift */; };
 		B46002B4262C2B0900B61947 /* TestCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46002B3262C2B0900B61947 /* TestCardView.swift */; };
 		B46002B7262C2BFF00B61947 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46002B6262C2BFF00B61947 /* Test.swift */; };
@@ -74,6 +77,9 @@
 		B4062C42262BF32A00AB748A /* ClimateChangeC2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ClimateChangeC2.mp4; sourceTree = "<group>"; };
 		B4062C45262C0C4700AB748A /* ChapterQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterQuizView.swift; sourceTree = "<group>"; };
 		B4062C48262C0FC200AB748A /* ClimateChangeC3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ClimateChangeC3.mp4; sourceTree = "<group>"; };
+		B44C2561263E7B3B00565EA7 /* TestQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestQuizView.swift; sourceTree = "<group>"; };
+		B44C2565263E7EC600565EA7 /* TestProcessBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProcessBarView.swift; sourceTree = "<group>"; };
+		B44C2568263E823800565EA7 /* TestQuizDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestQuizDetailView.swift; sourceTree = "<group>"; };
 		B46002B0262C190600B61947 /* ChapterQuizDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterQuizDetailView.swift; sourceTree = "<group>"; };
 		B46002B3262C2B0900B61947 /* TestCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCardView.swift; sourceTree = "<group>"; };
 		B46002B6262C2BFF00B61947 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
@@ -197,7 +203,10 @@
 			isa = PBXGroup;
 			children = (
 				B4062C102627FDEB00AB748A /* TestView.swift */,
+				B44C2561263E7B3B00565EA7 /* TestQuizView.swift */,
+				B44C2568263E823800565EA7 /* TestQuizDetailView.swift */,
 				B46002B3262C2B0900B61947 /* TestCardView.swift */,
+				B44C2565263E7EC600565EA7 /* TestProcessBarView.swift */,
 			);
 			path = TestViewGroup;
 			sourceTree = "<group>";
@@ -316,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4062C062627F8EA00AB748A /* QuizDatabase.swift in Sources */,
+				B44C2562263E7B3B00565EA7 /* TestQuizView.swift in Sources */,
 				B4062C3A262B32F500AB748A /* ChapterStore.swift in Sources */,
 				B46002B4262C2B0900B61947 /* TestCardView.swift in Sources */,
 				21A6FF1B262E02B000556AAC /* OpenDataModel.swift in Sources */,
@@ -334,8 +344,10 @@
 				B46002D12630307000B61947 /* AnswerQuizFeedbackView.swift in Sources */,
 				B4062C2926287E9500AB748A /* LocalVideoPlayerView.swift in Sources */,
 				B4062C3D262B37F900AB748A /* CircleProcessBarView.swift in Sources */,
+				B44C2566263E7EC600565EA7 /* TestProcessBarView.swift in Sources */,
 				B46002BD262C2CE800B61947 /* HeroStore.swift in Sources */,
 				B46002CE2630306100B61947 /* AnswerQuizDetailView.swift in Sources */,
+				B44C2569263E823800565EA7 /* TestQuizDetailView.swift in Sources */,
 				B4062C46262C0C4700AB748A /* ChapterQuizView.swift in Sources */,
 				B4062C34262B2E2500AB748A /* ChapterCardView.swift in Sources */,
 				B4062BE62627F63A00AB748A /* WeatheroApp.swift in Sources */,

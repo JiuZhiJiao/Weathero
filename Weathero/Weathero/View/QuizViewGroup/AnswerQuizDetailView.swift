@@ -35,67 +35,68 @@ struct AnswerQuizDetailView: View {
                     }
                 }
                 
-                Spacer(minLength: 0)
+                VStack(alignment: .center, spacing: 10) {
+                    Button(action: {
+                        selected = 1
+                        flag.toggle()
+                    }, label: {
+                        Text(quizDB.getQuiz(topic: chapter.topic)[qid].optionA)
+                            .foregroundColor(.primary)
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(
+                                RoundedRectangle(cornerRadius: 15)
+                                    .stroke(color(option: 1), lineWidth: 3)
+                            )
+                    })
+                    .disabled(flag)
+                    
+                    Button(action: {
+                        selected = 2
+                        flag.toggle()
+                    }, label: {
+                        Text(quizDB.getQuiz(topic: chapter.topic)[qid].optionB)
+                            .foregroundColor(.primary)
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(
+                                RoundedRectangle(cornerRadius: 15)
+                                    .stroke(color(option: 2), lineWidth: 3)
+                            )
+                    })
+                    .disabled(flag)
+                    
+                    Button(action: {
+                        selected = 3
+                        flag.toggle()
+                    }, label: {
+                        Text(quizDB.getQuiz(topic: chapter.topic)[qid].optionC)
+                            .foregroundColor(.primary)
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(
+                                RoundedRectangle(cornerRadius: 15)
+                                    .stroke(color(option: 3), lineWidth: 3)
+                            )
+                    })
+                    .disabled(flag)
+                    
+                    Button(action: {
+                        selected = 4
+                        flag.toggle()
+                    }, label: {
+                        Text(quizDB.getQuiz(topic: chapter.topic)[qid].optionD)
+                            .foregroundColor(.primary)
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(
+                                RoundedRectangle(cornerRadius: 15)
+                                    .stroke(color(option: 4), lineWidth: 3)
+                            )
+                    })
+                    .disabled(flag)
+                }
                 
-                Button(action: {
-                    selected = 1
-                    flag.toggle()
-                }, label: {
-                    Text(quizDB.getQuiz(topic: chapter.topic)[qid].optionA)
-                        .foregroundColor(.primary)
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(
-                            RoundedRectangle(cornerRadius: 15)
-                                .stroke(color(option: 1), lineWidth: 3)
-                        )
-                })
-                .disabled(flag)
-                
-                Button(action: {
-                    selected = 2
-                    flag.toggle()
-                }, label: {
-                    Text(quizDB.getQuiz(topic: chapter.topic)[qid].optionB)
-                        .foregroundColor(.primary)
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(
-                            RoundedRectangle(cornerRadius: 15)
-                                .stroke(color(option: 2), lineWidth: 3)
-                        )
-                })
-                .disabled(flag)
-                
-                Button(action: {
-                    selected = 3
-                    flag.toggle()
-                }, label: {
-                    Text(quizDB.getQuiz(topic: chapter.topic)[qid].optionC)
-                        .foregroundColor(.primary)
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(
-                            RoundedRectangle(cornerRadius: 15)
-                                .stroke(color(option: 3), lineWidth: 3)
-                        )
-                })
-                .disabled(flag)
-                
-                Button(action: {
-                    selected = 4
-                    flag.toggle()
-                }, label: {
-                    Text(quizDB.getQuiz(topic: chapter.topic)[qid].optionD)
-                        .foregroundColor(.primary)
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(
-                            RoundedRectangle(cornerRadius: 15)
-                                .stroke(color(option: 4), lineWidth: 3)
-                        )
-                })
-                .disabled(flag)
             }
             .padding()
         }

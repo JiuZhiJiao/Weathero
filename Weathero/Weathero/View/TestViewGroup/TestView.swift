@@ -11,12 +11,18 @@ struct TestView: View {
     var body: some View {
         NavigationView {
             List {
+                Section(header: Text("Finish the test to collect new hero").font(.title2).foregroundColor(.primary).textCase(.none)) {}
                 Section(header: Text("Weathero Kat").font(.title2).textCase(.none)) {
-                    TestCardView(test: tests[0])
-                    TestCardView(test: tests[1])
+                    ZStack {
+                        TestCardView(test: tests[0])
+                        NavigationLink( destination: TestQuizView(test: tests[0])){}.opacity(0)
+                    }
                 }
                 Section(header: Text("Weathero Steve").font(.title2).textCase(.none)) {
-                    TestCardView(test: tests[2])
+                    ZStack {
+                        TestCardView(test: tests[2])
+                        NavigationLink( destination: TestQuizView(test: tests[2])){}.opacity(0)
+                    }
                 }
             }
             .listStyle(InsetGroupedListStyle())
