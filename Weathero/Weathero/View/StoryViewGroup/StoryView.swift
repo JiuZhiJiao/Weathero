@@ -164,7 +164,7 @@ struct StoryView: View {
             .listStyle(InsetGroupedListStyle())
             .navigationTitle("Story")
             .onAppear(perform: {
-                if od?.avgRainfallTemperture == nil{
+                if self.chart1data.count == 0{
                     self.getOpenData()
                 }
             })

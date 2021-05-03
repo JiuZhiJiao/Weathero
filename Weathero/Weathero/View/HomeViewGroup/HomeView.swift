@@ -21,6 +21,7 @@ struct HomeView: View {
                             .font(.custom("SF Compact Rounded", size: 20))
                             .lineSpacing(3)
                         
+                        
                         LoopVideoPlayerView()
                             .scaledToFill()
                             .cornerRadius(10)
