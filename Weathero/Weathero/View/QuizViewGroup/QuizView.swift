@@ -117,6 +117,7 @@ struct QuizView: View {
                 }
                 .navigationTitle("Quiz")
             }
+            
         }
     }
 }

@@ -34,6 +34,8 @@
 		B4062C43262BF32A00AB748A /* ClimateChangeC2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B4062C42262BF32A00AB748A /* ClimateChangeC2.mp4 */; };
 		B4062C46262C0C4700AB748A /* ChapterQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4062C45262C0C4700AB748A /* ChapterQuizView.swift */; };
 		B4062C49262C0FC200AB748A /* ClimateChangeC3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B4062C48262C0FC200AB748A /* ClimateChangeC3.mp4 */; };
+		B433ACBC2642F68C00F93E20 /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = B433ACBB2642F68C00F93E20 /* VisualEffectBlur.swift */; };
+		B433ACC12643982500F93E20 /* SummaryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B433ACC02643982500F93E20 /* SummaryCardView.swift */; };
 		B44C2562263E7B3B00565EA7 /* TestQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44C2561263E7B3B00565EA7 /* TestQuizView.swift */; };
 		B44C2566263E7EC600565EA7 /* TestProcessBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44C2565263E7EC600565EA7 /* TestProcessBarView.swift */; };
 		B44C2569263E823800565EA7 /* TestQuizDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44C2568263E823800565EA7 /* TestQuizDetailView.swift */; };
@@ -77,6 +79,8 @@
 		B4062C42262BF32A00AB748A /* ClimateChangeC2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ClimateChangeC2.mp4; sourceTree = "<group>"; };
 		B4062C45262C0C4700AB748A /* ChapterQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterQuizView.swift; sourceTree = "<group>"; };
 		B4062C48262C0FC200AB748A /* ClimateChangeC3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ClimateChangeC3.mp4; sourceTree = "<group>"; };
+		B433ACBB2642F68C00F93E20 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
+		B433ACC02643982500F93E20 /* SummaryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryCardView.swift; sourceTree = "<group>"; };
 		B44C2561263E7B3B00565EA7 /* TestQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestQuizView.swift; sourceTree = "<group>"; };
 		B44C2565263E7EC600565EA7 /* TestProcessBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProcessBarView.swift; sourceTree = "<group>"; };
 		B44C2568263E823800565EA7 /* TestQuizDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestQuizDetailView.swift; sourceTree = "<group>"; };
@@ -170,7 +174,7 @@
 				B4062C172627FE4100AB748A /* QuizViewGroup */,
 				B46002D426304EEA00B61947 /* StoryViewGroup */,
 				B4062C182627FE4F00AB748A /* TestViewGroup */,
-				B4062C132627FE2600AB748A /* SummaryView.swift */,
+				B433ACBE264396E800F93E20 /* SummaryViewGroup */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -231,6 +235,16 @@
 				B4062C2826287E9500AB748A /* LocalVideoPlayerView.swift */,
 			);
 			path = HomeViewGroup;
+			sourceTree = "<group>";
+		};
+		B433ACBE264396E800F93E20 /* SummaryViewGroup */ = {
+			isa = PBXGroup;
+			children = (
+				B4062C132627FE2600AB748A /* SummaryView.swift */,
+				B433ACC02643982500F93E20 /* SummaryCardView.swift */,
+				B433ACBB2642F68C00F93E20 /* VisualEffectBlur.swift */,
+			);
+			path = SummaryViewGroup;
 			sourceTree = "<group>";
 		};
 		B46002D426304EEA00B61947 /* StoryViewGroup */ = {
@@ -331,9 +345,11 @@
 				21A6FF1B262E02B000556AAC /* OpenDataModel.swift in Sources */,
 				B46002B1262C190600B61947 /* ChapterQuizDetailView.swift in Sources */,
 				B4062C032627F87D00AB748A /* QuizData.swift in Sources */,
+				B433ACBC2642F68C00F93E20 /* VisualEffectBlur.swift in Sources */,
 				B4062BE82627F63A00AB748A /* ContentView.swift in Sources */,
 				B4062C30262B2C4000AB748A /* Chapter.swift in Sources */,
 				B46002CB2630305200B61947 /* AnswerQuizView.swift in Sources */,
+				B433ACC12643982500F93E20 /* SummaryCardView.swift in Sources */,
 				B4062C092627FD8400AB748A /* HomeView.swift in Sources */,
 				B46002D626304F0100B61947 /* StoryView.swift in Sources */,
 				B4062C2626287A1700AB748A /* LoopVideoPlayerView.swift in Sources */,
@@ -483,7 +499,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_ASSET_PATHS = "\"Weathero/Preview Content\"";
 				DEVELOPMENT_TEAM = EXH9NKGD4K;
 				ENABLE_PREVIEWS = YES;
@@ -506,7 +522,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_ASSET_PATHS = "\"Weathero/Preview Content\"";
 				DEVELOPMENT_TEAM = EXH9NKGD4K;
 				ENABLE_PREVIEWS = YES;

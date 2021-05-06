@@ -31,12 +31,12 @@ struct ContentView: View {
             TestView()
                 .tabItem {
                     Image(systemName: "questionmark.circle")
-                    Text("Test")
+                    Text("Challenge")
                 }
             SummaryView()
                 .tabItem {
                     Image(systemName: "person")
-                    Text("Summary")
+                    Text("Collection")
                 }
         }
     }

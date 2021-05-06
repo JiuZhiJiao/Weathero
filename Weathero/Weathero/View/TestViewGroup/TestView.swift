@@ -20,13 +20,19 @@ struct TestView: View {
                 }
                 Section(header: Text("Weathero Steve").font(.title2).textCase(.none)) {
                     ZStack {
+                        TestCardView(test: tests[1])
+                        NavigationLink( destination: TestQuizView(test: tests[1])){}.opacity(0)
+                    }
+                }
+                Section(header: Text("Weathero Thro").font(.title2).textCase(.none)) {
+                    ZStack {
                         TestCardView(test: tests[2])
                         NavigationLink( destination: TestQuizView(test: tests[2])){}.opacity(0)
                     }
                 }
             }
             .listStyle(InsetGroupedListStyle())
-            .navigationTitle("Test")
+            .navigationTitle("Challenge")
         }
     }
 }
