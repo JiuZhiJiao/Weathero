@@ -8,6 +8,7 @@
 struct QuizModel: Identifiable {
     var id: Int = 0
     var topic: String = ""
+    var mainTopic: String = ""
     var image: String = ""
     var content: String = ""
     var optionA: String = ""
@@ -23,6 +24,7 @@ extension QuizModel {
     init(quizData: QuizData) {
         id = quizData.id
         topic = quizData.topic
+        mainTopic = quizData.mainTopic
         image = quizData.image
         content = quizData.content
         optionA = quizData.optionA

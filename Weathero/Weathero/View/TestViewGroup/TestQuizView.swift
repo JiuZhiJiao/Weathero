@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import RealmSwift
 
 struct TestQuizView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @StateObject private var heroDB = HeroDatabase(realm: try! Realm())
     @State private var progress: Float = 0.4
     @State var qid: Int = 0
     @State var selected: Int = 0
@@ -99,6 +101,20 @@ struct TestQuizView: View {
                                             .font(.title2)
                                     }
                                     .padding(.horizontal)
+                                    
+                                    Spacer().frame(height: 80)
+                                    
+                                    Button(action: {
+                                        goBack()
+                                    }, label: {
+                                        Text("Go Back")
+                                            .fontWeight(.heavy)
+                                            .foregroundColor(.white)
+                                            .padding()
+                                            .frame(width: 200)
+                                            .background(Color.blue)
+                                            .cornerRadius(15)
+                                    })
                                 } else {
                                     VStack {
                                         Text("🎉Congratulation")
@@ -109,19 +125,22 @@ struct TestQuizView: View {
                                             .font(.title2)
                                     }
                                     .padding(.horizontal)
+                                    
+                                    Spacer().frame(height: 80)
+                                    
+                                    Button(action: {
+                                        goBackWithChange()
+                                    }, label: {
+                                        Text("Go Back")
+                                            .fontWeight(.heavy)
+                                            .foregroundColor(.white)
+                                            .padding()
+                                            .frame(width: 200)
+                                            .background(Color.blue)
+                                            .cornerRadius(15)
+                                    })
                                 }
-                                Spacer().frame(height: 80)
-                                Button(action: {
-                                    goBack()
-                                }, label: {
-                                    Text("Go Back")
-                                        .fontWeight(.heavy)
-                                        .foregroundColor(.white)
-                                        .padding()
-                                        .frame(width: 200)
-                                        .background(Color.blue)
-                                        .cornerRadius(15)
-                                })
+                                
                             }
                             .padding()
                         }
@@ -134,6 +153,11 @@ struct TestQuizView: View {
     }
     
     func goBack() {
+        self.presentationMode.wrappedValue.dismiss()
+    }
+    
+    func goBackWithChange() {
+        heroDB.changeCollect(id: (test.id - 1), collect: true)
         self.presentationMode.wrappedValue.dismiss()
     }
 }

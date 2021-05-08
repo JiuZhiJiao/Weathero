@@ -36,6 +36,9 @@
 		B4062C49262C0FC200AB748A /* ClimateChangeC3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B4062C48262C0FC200AB748A /* ClimateChangeC3.mp4 */; };
 		B433ACBC2642F68C00F93E20 /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = B433ACBB2642F68C00F93E20 /* VisualEffectBlur.swift */; };
 		B433ACC12643982500F93E20 /* SummaryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B433ACC02643982500F93E20 /* SummaryCardView.swift */; };
+		B433AD2E26469EF100F93E20 /* HeroData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B433AD2D26469EF100F93E20 /* HeroData.swift */; };
+		B433AD3126469F1C00F93E20 /* HeroDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B433AD3026469F1C00F93E20 /* HeroDatabase.swift */; };
+		B433AD352646A28E00F93E20 /* HeroCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B433AD342646A28E00F93E20 /* HeroCardView.swift */; };
 		B44C2562263E7B3B00565EA7 /* TestQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44C2561263E7B3B00565EA7 /* TestQuizView.swift */; };
 		B44C2566263E7EC600565EA7 /* TestProcessBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44C2565263E7EC600565EA7 /* TestProcessBarView.swift */; };
 		B44C2569263E823800565EA7 /* TestQuizDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44C2568263E823800565EA7 /* TestQuizDetailView.swift */; };
@@ -81,6 +84,9 @@
 		B4062C48262C0FC200AB748A /* ClimateChangeC3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ClimateChangeC3.mp4; sourceTree = "<group>"; };
 		B433ACBB2642F68C00F93E20 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
 		B433ACC02643982500F93E20 /* SummaryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryCardView.swift; sourceTree = "<group>"; };
+		B433AD2D26469EF100F93E20 /* HeroData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroData.swift; sourceTree = "<group>"; };
+		B433AD3026469F1C00F93E20 /* HeroDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDatabase.swift; sourceTree = "<group>"; };
+		B433AD342646A28E00F93E20 /* HeroCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCardView.swift; sourceTree = "<group>"; };
 		B44C2561263E7B3B00565EA7 /* TestQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestQuizView.swift; sourceTree = "<group>"; };
 		B44C2565263E7EC600565EA7 /* TestProcessBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProcessBarView.swift; sourceTree = "<group>"; };
 		B44C2568263E823800565EA7 /* TestQuizDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestQuizDetailView.swift; sourceTree = "<group>"; };
@@ -155,6 +161,7 @@
 			children = (
 				B4062BF82627F71400AB748A /* QuizModel.swift */,
 				B4062C022627F87D00AB748A /* QuizData.swift */,
+				B433AD2D26469EF100F93E20 /* HeroData.swift */,
 				B4062C2F262B2C4000AB748A /* Chapter.swift */,
 				B4062C39262B32F500AB748A /* ChapterStore.swift */,
 				B46002B6262C2BFF00B61947 /* Test.swift */,
@@ -183,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				B4062C052627F8EA00AB748A /* QuizDatabase.swift */,
+				B433AD3026469F1C00F93E20 /* HeroDatabase.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -241,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				B4062C132627FE2600AB748A /* SummaryView.swift */,
+				B433AD342646A28E00F93E20 /* HeroCardView.swift */,
 				B433ACC02643982500F93E20 /* SummaryCardView.swift */,
 				B433ACBB2642F68C00F93E20 /* VisualEffectBlur.swift */,
 			);
@@ -341,10 +350,12 @@
 				B4062C062627F8EA00AB748A /* QuizDatabase.swift in Sources */,
 				B44C2562263E7B3B00565EA7 /* TestQuizView.swift in Sources */,
 				B4062C3A262B32F500AB748A /* ChapterStore.swift in Sources */,
+				B433AD3126469F1C00F93E20 /* HeroDatabase.swift in Sources */,
 				B46002B4262C2B0900B61947 /* TestCardView.swift in Sources */,
 				21A6FF1B262E02B000556AAC /* OpenDataModel.swift in Sources */,
 				B46002B1262C190600B61947 /* ChapterQuizDetailView.swift in Sources */,
 				B4062C032627F87D00AB748A /* QuizData.swift in Sources */,
+				B433AD2E26469EF100F93E20 /* HeroData.swift in Sources */,
 				B433ACBC2642F68C00F93E20 /* VisualEffectBlur.swift in Sources */,
 				B4062BE82627F63A00AB748A /* ContentView.swift in Sources */,
 				B4062C30262B2C4000AB748A /* Chapter.swift in Sources */,
@@ -368,6 +379,7 @@
 				B4062C34262B2E2500AB748A /* ChapterCardView.swift in Sources */,
 				B4062BE62627F63A00AB748A /* WeatheroApp.swift in Sources */,
 				B46002B7262C2BFF00B61947 /* Test.swift in Sources */,
+				B433AD352646A28E00F93E20 /* HeroCardView.swift in Sources */,
 				B46002C0262C2DD200B61947 /* TestStore.swift in Sources */,
 				B4062BF92627F71400AB748A /* QuizModel.swift in Sources */,
 				B4062C142627FE2600AB748A /* SummaryView.swift in Sources */,

@@ -19,7 +19,7 @@ struct TestQuizDetailView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .leading) {
-                Text(quizDB.getQuiz(topic: test.topic)[qid].content)
+                Text(quizDB.getQuiz(mainTopic: test.topic)[qid].content)
                     .font(.title2)
                     .fontWeight(.bold)
                     .foregroundColor(.primary)
@@ -27,10 +27,10 @@ struct TestQuizDetailView: View {
                     .padding()
             }
             VStack(alignment: .center) {
-                if quizDB.getQuiz(topic: test.topic)[qid].image != "ImageName" {
-                    Image(quizDB.getQuiz(topic: test.topic)[qid].image)
+                if quizDB.getQuiz(mainTopic: test.topic)[qid].image != "ImageName" {
+                    Image(quizDB.getQuiz(mainTopic: test.topic)[qid].image)
                         .resizable()
-                        .scaledToFill()
+                        .scaledToFit()
                         .frame(width: UIScreen.main.bounds.width - 40)
                         .cornerRadius(10)
                 }
@@ -42,10 +42,10 @@ struct TestQuizDetailView: View {
                     selected = 1
                     check()
                 }, label: {
-                    Text(quizDB.getQuiz(topic: test.topic)[qid].optionA)
+                    Text(quizDB.getQuiz(mainTopic: test.topic)[qid].optionA)
                         .foregroundColor(.primary)
                         .padding()
-                        .frame(maxWidth: .infinity)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
                         .background(
                             RoundedRectangle(cornerRadius: 15)
                                 .stroke(color(option: 1), lineWidth: 3)
@@ -58,10 +58,10 @@ struct TestQuizDetailView: View {
                     selected = 2
                     check()
                 }, label: {
-                    Text(quizDB.getQuiz(topic: test.topic)[qid].optionB)
+                    Text(quizDB.getQuiz(mainTopic: test.topic)[qid].optionB)
                         .foregroundColor(.primary)
                         .padding()
-                        .frame(maxWidth: .infinity)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
                         .background(
                             RoundedRectangle(cornerRadius: 15)
                                 .stroke(color(option: 2), lineWidth: 3)
@@ -74,10 +74,10 @@ struct TestQuizDetailView: View {
                     selected = 3
                     check()
                 }, label: {
-                    Text(quizDB.getQuiz(topic: test.topic)[qid].optionC)
+                    Text(quizDB.getQuiz(mainTopic: test.topic)[qid].optionC)
                         .foregroundColor(.primary)
                         .padding()
-                        .frame(maxWidth: .infinity)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
                         .background(
                             RoundedRectangle(cornerRadius: 15)
                                 .stroke(color(option: 3), lineWidth: 3)
@@ -90,10 +90,10 @@ struct TestQuizDetailView: View {
                     selected = 4
                     check()
                 }, label: {
-                    Text(quizDB.getQuiz(topic: test.topic)[qid].optionD)
+                    Text(quizDB.getQuiz(mainTopic: test.topic)[qid].optionD)
                         .foregroundColor(.primary)
                         .padding()
-                        .frame(maxWidth: .infinity)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
                         .background(
                             RoundedRectangle(cornerRadius: 15)
                                 .stroke(color(option: 4), lineWidth: 3)
@@ -108,14 +108,14 @@ struct TestQuizDetailView: View {
     }
     
     func check() {
-        if quizDB.getQuiz(topic: test.topic)[qid].correct == selected {
+        if quizDB.getQuiz(mainTopic: test.topic)[qid].correct == selected {
             correctNumber = correctNumber + 1
         }
     }
     
     func color(option: Int) -> Color {
         if option == selected {
-            if quizDB.getQuiz(topic: test.topic)[qid].correct == selected {
+            if quizDB.getQuiz(mainTopic: test.topic)[qid].correct == selected {
                 return Color.green
             } else {
                 return Color.red

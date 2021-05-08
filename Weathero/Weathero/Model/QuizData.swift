@@ -11,6 +11,7 @@ import RealmSwift
 class QuizData: Object {
     @objc dynamic var id: Int = 0
     @objc dynamic var topic: String = ""
+    @objc dynamic var mainTopic: String = ""
     @objc dynamic var image: String = ""
     @objc dynamic var content: String = ""
     @objc dynamic var optionA: String = ""

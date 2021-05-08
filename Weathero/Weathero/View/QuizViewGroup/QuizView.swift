@@ -26,7 +26,7 @@ struct QuizView: View {
                                 Spacer()
                                     .frame(width: 15)
                                 ForEach(chapters) { chapter in
-                                    if chapter.topic == "Climate Change"{
+                                    if chapter.topic == "Climate Change 1" || chapter.topic == "Climate Change 2" || chapter.topic == "Climate Change 3"{
                                         NavigationLink(destination: ChapterDetailView(chapter: chapter)) {
                                             ChapterCardView(progress: 0.5, chapter: chapter)
                                                 .frame(width: 360, height: 380)
@@ -59,7 +59,7 @@ struct QuizView: View {
                                 Spacer()
                                     .frame(width: 15)
                                 ForEach(chapters) { chapter in
-                                    if chapter.topic == "Droughts"{
+                                    if chapter.topic == "Droughts 1"{
                                         NavigationLink(destination: ChapterDetailView(chapter: chapter)) {
                                             ChapterCardView(progress: 0.5, chapter: chapter)
                                                 .frame(width: 360, height: 380)

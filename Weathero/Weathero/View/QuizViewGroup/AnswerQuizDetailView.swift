@@ -43,7 +43,7 @@ struct AnswerQuizDetailView: View {
                         Text(quizDB.getQuiz(topic: chapter.topic)[qid].optionA)
                             .foregroundColor(.primary)
                             .padding()
-                            .frame(maxWidth: .infinity)
+                            .frame(maxWidth: .infinity, maxHeight: .infinity)
                             .background(
                                 RoundedRectangle(cornerRadius: 15)
                                     .stroke(color(option: 1), lineWidth: 3)
@@ -58,7 +58,7 @@ struct AnswerQuizDetailView: View {
                         Text(quizDB.getQuiz(topic: chapter.topic)[qid].optionB)
                             .foregroundColor(.primary)
                             .padding()
-                            .frame(maxWidth: .infinity)
+                            .frame(maxWidth: .infinity, maxHeight: .infinity)
                             .background(
                                 RoundedRectangle(cornerRadius: 15)
                                     .stroke(color(option: 2), lineWidth: 3)
@@ -73,7 +73,7 @@ struct AnswerQuizDetailView: View {
                         Text(quizDB.getQuiz(topic: chapter.topic)[qid].optionC)
                             .foregroundColor(.primary)
                             .padding()
-                            .frame(maxWidth: .infinity)
+                            .frame(maxWidth: .infinity, maxHeight: .infinity)
                             .background(
                                 RoundedRectangle(cornerRadius: 15)
                                     .stroke(color(option: 3), lineWidth: 3)
@@ -88,7 +88,7 @@ struct AnswerQuizDetailView: View {
                         Text(quizDB.getQuiz(topic: chapter.topic)[qid].optionD)
                             .foregroundColor(.primary)
                             .padding()
-                            .frame(maxWidth: .infinity)
+                            .frame(maxWidth: .infinity, maxHeight: .infinity)
                             .background(
                                 RoundedRectangle(cornerRadius: 15)
                                     .stroke(color(option: 4), lineWidth: 3)

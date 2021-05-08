@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import RealmSwift
 
 struct ContentView: View {
     @State private var selection = 0
+    @StateObject private var heroDB = HeroDatabase(realm: try! Realm())
     var body: some View {
         TabView(selection: $selection) {
             HomeView(selection: $selection)
@@ -22,6 +24,7 @@ struct ContentView: View {
                     Image(systemName: "chart.pie")
                     Text("Story")
                 }
+                .tag(2)
             QuizView()
                 .tabItem {
                     Image(systemName: "text.book.closed")
@@ -33,11 +36,13 @@ struct ContentView: View {
                     Image(systemName: "questionmark.circle")
                     Text("Challenge")
                 }
+                .tag(3)
             SummaryView()
                 .tabItem {
                     Image(systemName: "person")
                     Text("Collection")
                 }
+                .tag(4)
         }
     }
 }
