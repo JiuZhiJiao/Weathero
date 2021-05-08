@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		217A8C6E262EB9EB009DFB0A /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 217A8C6D262EB9EB009DFB0A /* SwiftUICharts */; };
 		21A6FF1B262E02B000556AAC /* OpenDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6FF1A262E02B000556AAC /* OpenDataModel.swift */; };
+		21B01B63264527E500F1CB16 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 21B01B62264527E500F1CB16 /* SwiftUICharts */; };
 		B4062BE62627F63A00AB748A /* WeatheroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4062BE52627F63A00AB748A /* WeatheroApp.swift */; };
 		B4062BE82627F63A00AB748A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4062BE72627F63A00AB748A /* ContentView.swift */; };
 		B4062BEA2627F63A00AB748A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4062BE92627F63A00AB748A /* Assets.xcassets */; };
@@ -102,7 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				217A8C6E262EB9EB009DFB0A /* SwiftUICharts in Frameworks */,
+				21B01B63264527E500F1CB16 /* SwiftUICharts in Frameworks */,
 				B4062C002627F81D00AB748A /* RealmSwift in Frameworks */,
 				B4062BFE2627F81D00AB748A /* Realm in Frameworks */,
 			);
@@ -274,7 +274,7 @@
 			packageProductDependencies = (
 				B4062BFD2627F81D00AB748A /* Realm */,
 				B4062BFF2627F81D00AB748A /* RealmSwift */,
-				217A8C6D262EB9EB009DFB0A /* SwiftUICharts */,
+				21B01B62264527E500F1CB16 /* SwiftUICharts */,
 			);
 			productName = Weathero;
 			productReference = B4062BE22627F63A00AB748A /* Weathero.app */;
@@ -305,7 +305,7 @@
 			mainGroup = B4062BD92627F63A00AB748A;
 			packageReferences = (
 				B4062BFC2627F81D00AB748A /* XCRemoteSwiftPackageReference "realm-cocoa" */,
-				217A8C6C262EB9EB009DFB0A /* XCRemoteSwiftPackageReference "ChartView" */,
+				21B01B61264527E500F1CB16 /* XCRemoteSwiftPackageReference "SwiftUICharts" */,
 			);
 			productRefGroup = B4062BE32627F63A00AB748A /* Products */;
 			projectDirPath = "";
@@ -563,12 +563,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		217A8C6C262EB9EB009DFB0A /* XCRemoteSwiftPackageReference "ChartView" */ = {
+		21B01B61264527E500F1CB16 /* XCRemoteSwiftPackageReference "SwiftUICharts" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/AppPear/ChartView";
+			repositoryURL = "https://github.com/willdale/SwiftUICharts";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.5.5;
+				minimumVersion = 2.5.0;
 			};
 		};
 		B4062BFC2627F81D00AB748A /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
@@ -582,9 +582,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		217A8C6D262EB9EB009DFB0A /* SwiftUICharts */ = {
+		21B01B62264527E500F1CB16 /* SwiftUICharts */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 217A8C6C262EB9EB009DFB0A /* XCRemoteSwiftPackageReference "ChartView" */;
+			package = 21B01B61264527E500F1CB16 /* XCRemoteSwiftPackageReference "SwiftUICharts" */;
 			productName = SwiftUICharts;
 		};
 		B4062BFD2627F81D00AB748A /* Realm */ = {
