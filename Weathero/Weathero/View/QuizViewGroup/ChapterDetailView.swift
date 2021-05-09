@@ -16,12 +16,18 @@ struct ChapterDetailView: View {
     
     var body: some View {
         VStack() {
+            
             LocalVideoPlayerView(videoString: chapter.video, controller: controller)
-                .frame(width: width, height: width * 0.56)
+//                .frame(width: UIScreen.main.bounds.width / 1.15,height: UIScreen.main.bounds.height / 4.42)
+                .frame(width: width * 0.88,height: width * 0.495 )
+                .cornerRadius(5.0)
+                .shadow(radius: 20)
                 .onDisappear() {
                     self.controller.player?.pause()
                 }
-            Divider()
+                .padding(.top, 32)
+                .padding(.bottom)
+//            Divider()
             
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(alignment: .leading) {
