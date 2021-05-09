@@ -15,7 +15,7 @@ struct ChapterDetailView: View {
     private let controller = AVPlayerViewController()
     
     var body: some View {
-        VStack() {
+        VStack {
             
             LocalVideoPlayerView(videoString: chapter.video, controller: controller)
 //                .frame(width: UIScreen.main.bounds.width / 1.15,height: UIScreen.main.bounds.height / 4.42)
@@ -38,6 +38,7 @@ struct ChapterDetailView: View {
                         .padding(.bottom)
                     
                     Text(chapter.content)
+                        .fixedSize(horizontal: false, vertical: true)
                         .font(.custom("SF Compact Rounded", size: 20))
                         .lineSpacing(3)
                         .multilineTextAlignment(.leading)
