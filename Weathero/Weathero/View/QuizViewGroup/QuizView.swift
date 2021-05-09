@@ -59,7 +59,7 @@ struct QuizView: View {
                                 Spacer()
                                     .frame(width: 15)
                                 ForEach(chapters) { chapter in
-                                    if chapter.topic == "Droughts 1"{
+                                    if chapter.topic == "Droughts 1" || chapter.topic == "Droughts 2"{
                                         NavigationLink(destination: ChapterDetailView(chapter: chapter)) {
                                             ChapterCardView(progress: 0.5, chapter: chapter)
                                                 .frame(width: 360, height: 380)
@@ -70,7 +70,7 @@ struct QuizView: View {
                                 }
                                 
                                 // Coming Soon Chapter
-                                ChapterCardView(progress: 0.0, chapter: Chapter(id: 22, topic: "", chapterNO: 2, title: "Coming Soon", subtitle: "New Chapter will be uploaded soon", image: "ComingSoon", video: "", content: ""))
+                                ChapterCardView(progress: 0.0, chapter: Chapter(id: 23, topic: "", chapterNO: 3, title: "Coming Soon", subtitle: "New Chapter will be uploaded soon", image: "ComingSoon", video: "", content: ""))
                                     .frame(width: 360, height: 380)
                                     .padding(5)
                                 Spacer()
@@ -115,7 +115,7 @@ struct QuizView: View {
                     }
                     
                 }
-                .navigationTitle("Quiz")
+                .navigationTitle("📚Quiz")
             }
             
         }

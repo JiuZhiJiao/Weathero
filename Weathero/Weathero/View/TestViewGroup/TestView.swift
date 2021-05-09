@@ -32,7 +32,7 @@ struct TestView: View {
                 }
             }
             .listStyle(InsetGroupedListStyle())
-            .navigationTitle("Challenge")
+            .navigationTitle("🧐Challenge")
         }
     }
 }

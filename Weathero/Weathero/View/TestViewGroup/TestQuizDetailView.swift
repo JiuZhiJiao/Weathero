@@ -43,6 +43,7 @@ struct TestQuizDetailView: View {
                     check()
                 }, label: {
                     Text(quizDB.getQuiz(mainTopic: test.topic)[qid].optionA)
+                        .fixedSize(horizontal: false, vertical: true)
                         .foregroundColor(.primary)
                         .padding()
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -59,6 +60,7 @@ struct TestQuizDetailView: View {
                     check()
                 }, label: {
                     Text(quizDB.getQuiz(mainTopic: test.topic)[qid].optionB)
+                        .fixedSize(horizontal: false, vertical: true)
                         .foregroundColor(.primary)
                         .padding()
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -75,6 +77,7 @@ struct TestQuizDetailView: View {
                     check()
                 }, label: {
                     Text(quizDB.getQuiz(mainTopic: test.topic)[qid].optionC)
+                        .fixedSize(horizontal: false, vertical: true)
                         .foregroundColor(.primary)
                         .padding()
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -91,6 +94,7 @@ struct TestQuizDetailView: View {
                     check()
                 }, label: {
                     Text(quizDB.getQuiz(mainTopic: test.topic)[qid].optionD)
+                        .fixedSize(horizontal: false, vertical: true)
                         .foregroundColor(.primary)
                         .padding()
                         .frame(maxWidth: .infinity, maxHeight: .infinity)

@@ -33,7 +33,7 @@ struct TestProcessBarView: View {
                 .foregroundColor(.gray)
             
             RoundedRectangle(cornerRadius: 30)
-                .frame(width: width * CGFloat(Float(correctNumber)/2.0), height: 20)
+                .frame(width: width * CGFloat(Float(correctNumber)/10.0), height: 20)
                 .foregroundColor(.green)
                 .animation(.linear)
         }

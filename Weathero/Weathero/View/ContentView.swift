@@ -15,31 +15,31 @@ struct ContentView: View {
         TabView(selection: $selection) {
             HomeView(selection: $selection)
                 .tabItem {
-                    Image(systemName: "house")
+                    Image("iconHome")
                     Text("Home")
                 }
                 .tag(0)
             StoryView()
                 .tabItem {
-                    Image(systemName: "chart.pie")
+                    Image("iconStory")
                     Text("Story")
                 }
                 .tag(2)
             QuizView()
                 .tabItem {
-                    Image(systemName: "text.book.closed")
+                    Image("iconQuiz")
                     Text("Quiz")
                 }
                 .tag(1)
             TestView()
                 .tabItem {
-                    Image(systemName: "questionmark.circle")
+                    Image("iconChallenge")
                     Text("Challenge")
                 }
                 .tag(3)
             SummaryView()
                 .tabItem {
-                    Image(systemName: "person")
+                    Image("iconCollection")
                     Text("Collection")
                 }
                 .tag(4)

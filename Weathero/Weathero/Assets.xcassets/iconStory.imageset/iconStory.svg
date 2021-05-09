@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icons8-pie-chart</title>
+    <defs>
+        <linearGradient x1="0.0072454565%" y1="50.0000672%" x2="99.9986785%" y2="50.0000672%" id="linearGradient-1">
+            <stop stop-color="#3498DB" offset="0%"></stop>
+            <stop stop-color="#42A4EB" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0.000134383199%" y1="50.0063362%" x2="99.987753%" y2="50.0063362%" id="linearGradient-2">
+            <stop stop-color="#E74C3C" offset="0%"></stop>
+            <stop stop-color="#FA6254" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0.000134383199%" y1="50.0112323%" x2="99.987753%" y2="50.0112323%" id="linearGradient-3">
+            <stop stop-color="#CCD216" offset="0%"></stop>
+            <stop stop-color="#FFD12D" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons8-pie-chart" fill-rule="nonzero">
+            <path d="M12.5,0.0976559524 C5.68266429,0.0976559524 0.0976559524,5.68266429 0.0976559524,12.5 C0.0976559524,19.3173357 5.68266429,24.902344 12.5,24.902344 C16.0807286,24.902344 19.3173357,23.3863464 21.5262274,20.9728429 L12.5,12.5 L12.5,0.0976559524 Z" id="Path" fill="url(#linearGradient-1)"></path>
+            <path d="M24.902344,12.5 C24.902344,5.68266429 19.3173357,0.0976559524 12.5,0.0976559524 L12.5,12.5 L24.902344,12.5 Z" id="Path" fill="url(#linearGradient-2)"></path>
+            <path d="M12.5,12.5 L21.5262274,20.9728429 C23.5909595,18.7686012 24.902344,15.8063619 24.902344,12.5 L12.5,12.5 Z" id="Path" fill="url(#linearGradient-3)"></path>
+        </g>
+    </g>
+</svg>

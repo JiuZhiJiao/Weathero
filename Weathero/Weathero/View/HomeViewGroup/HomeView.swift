@@ -75,8 +75,7 @@ struct HomeView: View {
                 Spacer()
                     .frame(height: 8)
             }
-            
-            .navigationTitle("Welcome")
+            .navigationTitle("🏠Welcome")
         }
     }
 }

@@ -39,6 +39,7 @@
 		B433AD2E26469EF100F93E20 /* HeroData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B433AD2D26469EF100F93E20 /* HeroData.swift */; };
 		B433AD3126469F1C00F93E20 /* HeroDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B433AD3026469F1C00F93E20 /* HeroDatabase.swift */; };
 		B433AD352646A28E00F93E20 /* HeroCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B433AD342646A28E00F93E20 /* HeroCardView.swift */; };
+		B433AD3A2647C4C900F93E20 /* DroughtsC2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B433AD392647C4C900F93E20 /* DroughtsC2.mp4 */; };
 		B44C2562263E7B3B00565EA7 /* TestQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44C2561263E7B3B00565EA7 /* TestQuizView.swift */; };
 		B44C2566263E7EC600565EA7 /* TestProcessBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44C2565263E7EC600565EA7 /* TestProcessBarView.swift */; };
 		B44C2569263E823800565EA7 /* TestQuizDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44C2568263E823800565EA7 /* TestQuizDetailView.swift */; };
@@ -87,6 +88,7 @@
 		B433AD2D26469EF100F93E20 /* HeroData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroData.swift; sourceTree = "<group>"; };
 		B433AD3026469F1C00F93E20 /* HeroDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDatabase.swift; sourceTree = "<group>"; };
 		B433AD342646A28E00F93E20 /* HeroCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCardView.swift; sourceTree = "<group>"; };
+		B433AD392647C4C900F93E20 /* DroughtsC2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = DroughtsC2.mp4; sourceTree = "<group>"; };
 		B44C2561263E7B3B00565EA7 /* TestQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestQuizView.swift; sourceTree = "<group>"; };
 		B44C2565263E7EC600565EA7 /* TestProcessBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProcessBarView.swift; sourceTree = "<group>"; };
 		B44C2568263E823800565EA7 /* TestQuizDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestQuizDetailView.swift; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 				B4062C42262BF32A00AB748A /* ClimateChangeC2.mp4 */,
 				B4062C48262C0FC200AB748A /* ClimateChangeC3.mp4 */,
 				B46002C2262C3A3000B61947 /* DroughtsC1.mp4 */,
+				B433AD392647C4C900F93E20 /* DroughtsC2.mp4 */,
 			);
 			path = Files;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 			files = (
 				B4062C222628740B00AB748A /* HomeHero.MP4 in Resources */,
 				B4062C43262BF32A00AB748A /* ClimateChangeC2.mp4 in Resources */,
+				B433AD3A2647C4C900F93E20 /* DroughtsC2.mp4 in Resources */,
 				B4062BED2627F63A00AB748A /* Preview Assets.xcassets in Resources */,
 				B46002C3262C3A3000B61947 /* DroughtsC1.mp4 in Resources */,
 				B4062BEA2627F63A00AB748A /* Assets.xcassets in Resources */,
@@ -511,7 +515,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_ASSET_PATHS = "\"Weathero/Preview Content\"";
 				DEVELOPMENT_TEAM = EXH9NKGD4K;
 				ENABLE_PREVIEWS = YES;
@@ -534,7 +538,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_ASSET_PATHS = "\"Weathero/Preview Content\"";
 				DEVELOPMENT_TEAM = EXH9NKGD4K;
 				ENABLE_PREVIEWS = YES;

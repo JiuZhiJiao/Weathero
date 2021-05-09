@@ -34,7 +34,7 @@ struct TestQuizView: View {
                         HStack {
                             Text("Correct Answered")
                             Spacer()
-                            Text("\(correctNumber)/2")
+                            Text("\(correctNumber)/10")
                         }
                         .frame(width: UIScreen.main.bounds.width * 0.6)
                         
@@ -44,7 +44,7 @@ struct TestQuizView: View {
                     
                     VStack {
                         Button(action: {
-                            if qid < 2 && correctNumber < 2 {
+                            if qid < 14 && correctNumber < 10 {
                                 qid = qid + 1
                                 selected = 0
                                 flag.toggle()
@@ -52,7 +52,7 @@ struct TestQuizView: View {
                                 showAlert = true
                             }
                         }, label: {
-                            if correctNumber < 2 && qid < 2 {
+                            if correctNumber < 10 && qid < 14 {
                                 Text("Next")
                                     .fontWeight(.heavy)
                                     .foregroundColor(.white)
@@ -91,13 +91,13 @@ struct TestQuizView: View {
                                 .cornerRadius(25)
                                 .shadow(radius: 3)
                             VStack {
-                                if correctNumber < 2 {
+                                if correctNumber < 10 {
                                     VStack {
                                         Text("😟Unfortunately")
                                             .font(.title)
                                             .bold()
                                         Spacer().frame(height: 40)
-                                        Text("You only answered \(correctNumber) questions correctly, but you need to get \(2 - correctNumber) more correct answers to get the hero.")
+                                        Text("You only answered \(correctNumber) questions correctly, but you need to get \(10 - correctNumber) more correct answers to get the hero.")
                                             .font(.title2)
                                     }
                                     .padding(.horizontal)
@@ -121,7 +121,7 @@ struct TestQuizView: View {
                                             .font(.title)
                                             .bold()
                                         Spacer().frame(height: 40)
-                                        Text("You have answered \(correctNumber) questions correctly, you get the hero \(test.hero.name)!")
+                                        Text("You have answered \(correctNumber) questions correctly, you get the \(test.hero.name)!")
                                             .font(.title2)
                                     }
                                     .padding(.horizontal)

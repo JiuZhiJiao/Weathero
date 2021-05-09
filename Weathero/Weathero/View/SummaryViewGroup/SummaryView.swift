@@ -18,7 +18,7 @@ struct SummaryView: View {
             VStack(spacing: -16) {
                 Spacer()
                 VStack {
-                    Text("Collection")
+                    Text("🦸🏻‍♂️Collection")
                         .font(.largeTitle)
                         .bold()
                         .padding()

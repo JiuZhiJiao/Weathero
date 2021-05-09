@@ -220,7 +220,7 @@ struct StoryView: View {
                 }
             }
             .listStyle(InsetGroupedListStyle())
-            .navigationTitle("Story")
+            .navigationTitle("📊Story")
             .onAppear(perform: {
                 if !downloaded {
                     getOpenData()
