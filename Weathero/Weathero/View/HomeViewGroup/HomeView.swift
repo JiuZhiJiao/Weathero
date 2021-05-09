@@ -17,7 +17,7 @@ struct HomeView: View {
                 ScrollView(.vertical, showsIndicators: false) {
                     VStack(alignment: .leading, spacing: 16) {
                         
-                        Text("Hi, I am weathero your weather hero. I am on mission to save the world from floods and droughts. How about you help me do that?")
+                        Text("Hi, I am Weathero🦸🏻‍♂️ your weather hero. I am on mission to save the world from 🌊floods and 🥵droughts. How about you help me do that?")
                             .font(.custom("SF Compact Rounded", size: 20))
                             .lineSpacing(3)
                         
@@ -26,34 +26,22 @@ struct HomeView: View {
                             .scaledToFill()
                             .cornerRadius(10)
                         
-                        Text("This is a journey to become a weather hero")
+                        Text("This is a journey to become a weather hero.")
                             .font(.custom("SF Compact Rounded", size: 20))
                             .lineSpacing(3)
-                        Text("All you must do is watch a few videos, take a quiz, and get ready to implement it in your daily life. I need you. Come help me!")
+                        Text("All you must do is watch a few 🎥videos, take a 🙋🏻quiz, and get ready to implement it in your daily life. I need you. Come help me!")
                             .font(.custom("SF Compact Rounded", size: 20))
                             .lineSpacing(3)
                         
                     }
-                    
+                    .padding()
                     
                 }
-                .padding(.horizontal)
                 
                 
                 HStack(){
                     Spacer()
                     Button(action: {self.selection = 1}) {
-    //                        Text("Let's Get Started")
-    //                            .font(.system(.title2, design: .rounded))
-    //                            .fontWeight(.semibold)
-    //                            .padding(20)
-    //                            .background(
-    //                                Rectangle()
-    //                                    .fill(Color.white)
-    //                                    .cornerRadius(60)
-    //                                    .shadow(color: Color.black.opacity(0.15), radius: 10, x: 10, y: 10)
-    //                                    .shadow(color: Color.white.opacity(0.7), radius: 10, x: -5, y: -5)
-    //                            )
                         
                         Text("Let's Get Started")
                             .font(.system(.title2, design: .rounded))
@@ -75,7 +63,7 @@ struct HomeView: View {
                 Spacer()
                     .frame(height: 8)
             }
-            .navigationTitle("🏠Welcome")
+            .navigationTitle("🏠 Welcome")
         }
     }
 }

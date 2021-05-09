@@ -115,9 +115,10 @@ struct QuizView: View {
                     }
                     
                 }
-                .navigationTitle("📚Quiz")
             }
             
+            .background(Color(red: 242/255, green: 242/255 , blue:247/255).ignoresSafeArea())
+            .navigationTitle("📚 Quiz")
         }
     }
 }

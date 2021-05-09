@@ -66,9 +66,7 @@ struct ChapterDetailView: View {
             //ProgressView(value: 0.6, total: 1.0)
             
         }
-        
-        
-        
+        .background(Color(red: 242/255, green: 242/255 , blue:247/255).ignoresSafeArea())
         .navigationTitle(chapter.title)
         .navigationBarTitleDisplayMode(.inline)
     }

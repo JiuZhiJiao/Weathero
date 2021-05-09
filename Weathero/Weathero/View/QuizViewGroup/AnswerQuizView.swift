@@ -85,7 +85,7 @@ struct AnswerQuizView: View {
             }
             .padding([.horizontal, .bottom])
         }
-        
+        .background(Color(red: 242/255, green: 242/255 , blue:247/255).ignoresSafeArea())
     }
 }
 

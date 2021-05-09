@@ -150,6 +150,7 @@ struct TestQuizView: View {
                 }
             }
         }
+        .background(Color(red: 242/255, green: 242/255 , blue:247/255).ignoresSafeArea())
     }
     
     func goBack() {
