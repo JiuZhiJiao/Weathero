@@ -127,7 +127,8 @@ struct StoryView: View {
                             BarChart(chartData: barData!)
                                 .touchOverlay(chartData: barData!, specifier: "%.0f")
                                 .floatingInfoBox(chartData: barData!)
-                                .frame(minWidth: 300 ,maxWidth: 900, minHeight: 150, maxHeight: 400, alignment: .center)
+                                .headerBox(chartData: barData!)
+                                .frame(minWidth: 300 ,maxWidth: 900, minHeight: 200, maxHeight: 400, alignment: .center)
                                 .xAxisLabels(chartData: barData!)
                                 .padding(.leading, -13)
                         }
@@ -148,8 +149,9 @@ struct StoryView: View {
                             PieChart(chartData: pieData!)
                                 .touchOverlay(chartData: pieData!, specifier: "%.0f")
                                 .floatingInfoBox(chartData: pieData!)
+                                .headerBox(chartData: pieData!)
                                 .legends(chartData: pieData!, columns: [GridItem(.flexible()), GridItem(.flexible())])
-                                .frame(minWidth: 300 ,maxWidth: 900, minHeight: 300, maxHeight: 400, alignment: .center)
+                                .frame(minWidth: 300 ,maxWidth: 900, minHeight: 350, maxHeight: 400, alignment: .center)
                                 .padding(.leading, -13)
                         }
                         
@@ -169,7 +171,8 @@ struct StoryView: View {
                             MultiLineChart(chartData: multiLineData!)
                                 .touchOverlay(chartData: multiLineData!, specifier: "%.2f")
                                 .floatingInfoBox(chartData: multiLineData!)
-                                .frame(minWidth: 300 ,maxWidth: 900, minHeight: 150, maxHeight: 400, alignment: .center)
+                                .headerBox(chartData: multiLineData!)
+                                .frame(minWidth: 300 ,maxWidth: 900, minHeight: 200, maxHeight: 400, alignment: .center)
                                 .legends(chartData: multiLineData!, columns: [GridItem(.flexible()), GridItem(.flexible())])
                                 .padding(.leading, -13)
                                 .padding(.bottom, -15)
@@ -190,7 +193,8 @@ struct StoryView: View {
                             LineChart(chartData: lineData1!)
                                 .touchOverlay(chartData: lineData1!, specifier: "%.0f")
                                 .floatingInfoBox(chartData: lineData1!)
-                                .frame(minWidth: 300 ,maxWidth: 900, minHeight: 150, maxHeight: 400, alignment: .center)
+                                .headerBox(chartData: lineData1!)
+                                .frame(minWidth: 300 ,maxWidth: 900, minHeight: 200, maxHeight: 400, alignment: .center)
                                 .legends(chartData: lineData1!, columns: [GridItem(.flexible()), GridItem(.flexible())])
                                 .padding(.leading, -13)
                                 .padding(.bottom, -15)
@@ -199,6 +203,7 @@ struct StoryView: View {
                     .padding(.vertical, 8)
                 }
                 
+                /*
                 Section(header: Text("Average Daily Temperature (2000-2020)").font(.title2).textCase(.none)) {
                     VStack(alignment:.leading) {
                         Text("Having these extreme conditions for a prolonged period will cause floods and droughts.")
@@ -210,14 +215,15 @@ struct StoryView: View {
                             LineChart(chartData: lineData2!)
                                 .touchOverlay(chartData: lineData2!, specifier: "%.0f")
                                 .floatingInfoBox(chartData: lineData2!)
-                                .frame(minWidth: 300 ,maxWidth: 900, minHeight: 150, maxHeight: 400, alignment: .center)
+                                .headerBox(chartData: lineData2!)
+                                .frame(minWidth: 300 ,maxWidth: 900, minHeight: 200, maxHeight: 400, alignment: .center)
                                 .legends(chartData: lineData2!, columns: [GridItem(.flexible()), GridItem(.flexible())])
                                 .padding(.leading, -13)
                                 .padding(.bottom, -15)
                         }
                     }
                     .padding(.vertical, 8)
-                }
+                } */
             }
             .listStyle(InsetGroupedListStyle())
             .navigationTitle("📊 Story")
@@ -268,7 +274,8 @@ struct StoryView: View {
                                                             PieChartDataPoint(value: Double(emi2016.vehicularEmissions), description: "Vehicular", colour: .red),
                                                             PieChartDataPoint(value: Double(emi2016.solidWasteEmissions), description: "Solid Waste", colour: .green),
                                                             PieChartDataPoint(value: Double(emi2016.wasteWaterEmissions), description: "Waste Water", colour: .orange)],
-                                                        legendTitle: "Examples"), metadata: ChartMetadata(),
+                                                        legendTitle: "Examples"),
+                                   metadata: ChartMetadata(subtitle: "Unit: ton", subtitleColour: .gray),
                                    chartStyle: pieChartStyle)
             
             //Prepare line chart data
@@ -279,15 +286,23 @@ struct StoryView: View {
                 rainfall.append(LineChartDataPoint(value: Double(item.rainfall), xAxisLabel: String(item.year), description: String(item.year)))
                 temp.append(LineChartDataPoint(value: Double(item.temperture), xAxisLabel: String(item.year), description: String(item.year)))
             }
-            lineData1 = LineChartData(dataSets: LineDataSet(dataPoints: rainfall, legendTitle: "Average Daily Rainfall"), chartStyle: lineChartStyle)
-            lineData2 = LineChartData(dataSets: LineDataSet(dataPoints: temp, legendTitle: "Average Daily Temperature"), chartStyle: lineChartStyle)
+            lineData1 = LineChartData(dataSets: LineDataSet(dataPoints: rainfall,legendTitle: "Average Daily Rainfall"),
+                                      metadata: ChartMetadata(subtitle: "Unit: mm", subtitleColour: .gray),
+                                      chartStyle: lineChartStyle)
+            lineData2 = LineChartData(dataSets: LineDataSet(dataPoints: temp, legendTitle: "Average Daily Temperature"),
+                                      metadata: ChartMetadata(subtitle: "Unit: ℃", subtitleColour: .gray),
+                                      chartStyle: lineChartStyle)
             
             //Prepare bar chart data
             var totalEmi = [BarChartDataPoint]()
             for item in opendata.emissions {
                 totalEmi.append(BarChartDataPoint(value: Double(item.totalEmissions) , xAxisLabel: String(item.year), description: String(item.year)))
             }
-            barData = BarChartData(dataSets: BarDataSet(dataPoints: totalEmi, legendTitle: "Annual CO2 Emission"), metadata: ChartMetadata(title: "Emission of CO2 over years in tons"),barStyle: barStyle, chartStyle: barChartStyle)
+            barData = BarChartData(dataSets: BarDataSet(dataPoints: totalEmi,
+                                                        legendTitle: "Annual CO2 Emission"),
+                                   metadata: ChartMetadata(subtitle: "Unit: ton", subtitleColour: .gray),
+                                   barStyle: barStyle,
+                                   chartStyle: barChartStyle)
             
             //Prepare multi line chart data
             var seaTemp = [LineChartDataPoint]()
@@ -299,6 +314,7 @@ struct StoryView: View {
             multiLineData = MultiLineChartData(dataSets:MultiLineDataSet(dataSets: [
                                                                     LineDataSet(dataPoints: seaTemp, legendTitle: "Sea Temperature", style: LineStyle(lineColour: ColourStyle(colour: .blue))),
                                                                     LineDataSet(dataPoints: landTemp, legendTitle: "Land Temperature", style: LineStyle(lineColour: ColourStyle(colour: .red)))]),
+                                               metadata: ChartMetadata(subtitle: "Unit: ℃", subtitleColour: .gray),
                                                chartStyle: lineChartStyle)
             
             
