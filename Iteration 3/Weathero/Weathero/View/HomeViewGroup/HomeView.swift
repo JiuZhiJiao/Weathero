@@ -17,7 +17,7 @@ struct HomeView: View {
                 ScrollView(.vertical, showsIndicators: false) {
                     VStack(alignment: .leading, spacing: 16) {
                         
-                        Text("Hi, I am Weathero🦸🏻‍♂️ your weather hero. I am on mission to save the world from 🌊floods and 🥵droughts. How about you help me do that?")
+                        Text("Hi, I am Weathero🦸🏻‍♂️ your weather hero. I am on a mission to save the world from 🌊floods and 🥵droughts. How about you help me do that?")
                             .font(.custom("SF Compact Rounded", size: 20))
                             .lineSpacing(3)
                         
@@ -29,7 +29,7 @@ struct HomeView: View {
                         Text("This is a journey to become a weather hero.")
                             .font(.custom("SF Compact Rounded", size: 20))
                             .lineSpacing(3)
-                        Text("All you must do is watch a few 🎥videos, take a 🙋🏻quiz, and get ready to implement it in your daily life. I need you. Come help me!")
+                        Text("All you must do is watch few 🎥videos, take a 🙋🏻quiz, and get ready to implement it in your daily life. I need you. Come help me!")
                             .font(.custom("SF Compact Rounded", size: 20))
                             .lineSpacing(3)
                         

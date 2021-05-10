@@ -52,7 +52,7 @@ struct SummaryView: View {
                                         .opacity(0)
                                 }
                                 .alert(isPresented: $showAlert, content: {
-                                    Alert(title: Text("Weathero - Not Collected"), message: Text("You need to collect all other three heros to collect the Weathero"), dismissButton: .cancel(Text("Got it")))
+                                    Alert(title: Text("Weathero - Not Collected"), message: Text("You need to collect all other three heroes to collect the Weathero"), dismissButton: .cancel(Text("Got it")))
                                 })
                             }
                         }
@@ -72,7 +72,7 @@ struct SummaryView: View {
                     
                     Spacer()
                         .frame(height: 8)
-                    Text("Once you collect first three heros, click the last card to collect Weathero")
+                    Text("Once you collect the first three heroes, click the last card to collect Weathero")
                         .font(.caption)
                         .foregroundColor(.secondary)
                         .multilineTextAlignment(.center)

@@ -139,7 +139,7 @@ struct StoryView: View {
                 
                 Section(header: Text("Distribution of CO2 emissions in 2019").font(.title2).textCase(.none)) {
                     VStack(alignment:.leading) {
-                        Text("You can see in the below pie chart that CO2 emissions by our cars is almost more than half of the total emissions.")
+                        Text("You can see in the pie chart below that CO2 emissions by our cars are almost more than half of the total emissions.")
                             .font(.custom("SF Compact Rounded", size: 20))
                             .lineSpacing(3)
                             .padding(.bottom, 8)
@@ -160,7 +160,7 @@ struct StoryView: View {
                 
                 Section(header: Text("Change in Sealand Temperature (2000-2015)").font(.title2).textCase(.none)) {
                     VStack(alignment:.leading) {
-                        Text("Which results in an increase in climatic temperature like, temperature of the air and temperature of the sea water. You can see that climatic temperature change in the below chart.")
+                        Text("Which results in an increase in climatic temperature like, the temperature of the air and temperature of the sea water. You can see that climatic temperature change in the below chart.")
                             .font(.custom("SF Compact Rounded", size: 20))
                             .lineSpacing(3)
                             .padding(.bottom, 8)
