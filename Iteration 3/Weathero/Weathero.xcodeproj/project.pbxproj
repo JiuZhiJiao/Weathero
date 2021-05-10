@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21A6FF1B262E02B000556AAC /* OpenDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6FF1A262E02B000556AAC /* OpenDataModel.swift */; };
+		21B01B63264527E500F1CB16 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 21B01B62264527E500F1CB16 /* SwiftUICharts */; };
+		B4062BE62627F63A00AB748A /* WeatheroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4062BE52627F63A00AB748A /* WeatheroApp.swift */; };
+		B4062BE82627F63A00AB748A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4062BE72627F63A00AB748A /* ContentView.swift */; };
+		B4062BEA2627F63A00AB748A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4062BE92627F63A00AB748A /* Assets.xcassets */; };
+		B4062BED2627F63A00AB748A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4062BEC2627F63A00AB748A /* Preview Assets.xcassets */; };
+		B4062BF92627F71400AB748A /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4062BF82627F71400AB748A /* QuizModel.swift */; };
+		B4062BFE2627F81D00AB748A /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = B4062BFD2627F81D00AB748A /* Realm */; };
+		B4062C002627F81D00AB748A /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B4062BFF2627F81D00AB748A /* RealmSwift */; };
+		B4062C032627F87D00AB748A /* QuizData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4062C022627F87D00AB748A /* QuizData.swift */; };
+		B4062C062627F8EA00AB748A /* QuizDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4062C052627F8EA00AB748A /* QuizDatabase.swift */; };
+		B4062C092627FD8400AB748A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4062C082627FD8400AB748A /* HomeView.swift */; };
+		B4062C0D2627FDC000AB748A /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4062C0C2627FDC000AB748A /* QuizView.swift */; };
+		B4062C112627FDEB00AB748A /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4062C102627FDEB00AB748A /* TestView.swift */; };
+		B4062C142627FE2600AB748A /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4062C132627FE2600AB748A /* SummaryView.swift */; };
+		B4062C222628740B00AB748A /* HomeHero.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = B4062C1C2628732C00AB748A /* HomeHero.MP4 */; };
+		B4062C2626287A1700AB748A /* LoopVideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4062C2526287A1700AB748A /* LoopVideoPlayerView.swift */; };
+		B4062C2926287E9500AB748A /* LocalVideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4062C2826287E9500AB748A /* LocalVideoPlayerView.swift */; };
+		B4062C30262B2C4000AB748A /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4062C2F262B2C4000AB748A /* Chapter.swift */; };
+		B4062C34262B2E2500AB748A /* ChapterCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4062C33262B2E2500AB748A /* ChapterCardView.swift */; };
+		B4062C37262B2F5400AB748A /* ClimateChangeC1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B4062C36262B2F4E00AB748A /* ClimateChangeC1.mp4 */; };
+		B4062C3A262B32F500AB748A /* ChapterStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4062C39262B32F500AB748A /* ChapterStore.swift */; };
+		B4062C3D262B37F900AB748A /* CircleProcessBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4062C3C262B37F900AB748A /* CircleProcessBarView.swift */; };
+		B4062C40262B43F800AB748A /* ChapterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4062C3F262B43F800AB748A /* ChapterDetailView.swift */; };
+		B4062C43262BF32A00AB748A /* ClimateChangeC2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B4062C42262BF32A00AB748A /* ClimateChangeC2.mp4 */; };
+		B4062C46262C0C4700AB748A /* ChapterQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4062C45262C0C4700AB748A /* ChapterQuizView.swift */; };
+		B4062C49262C0FC200AB748A /* ClimateChangeC3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B4062C48262C0FC200AB748A /* ClimateChangeC3.mp4 */; };
+		B433ACBC2642F68C00F93E20 /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = B433ACBB2642F68C00F93E20 /* VisualEffectBlur.swift */; };
+		B433ACC12643982500F93E20 /* SummaryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B433ACC02643982500F93E20 /* SummaryCardView.swift */; };
+		B433AD2E26469EF100F93E20 /* HeroData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B433AD2D26469EF100F93E20 /* HeroData.swift */; };
+		B433AD3126469F1C00F93E20 /* HeroDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B433AD3026469F1C00F93E20 /* HeroDatabase.swift */; };
+		B433AD352646A28E00F93E20 /* HeroCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B433AD342646A28E00F93E20 /* HeroCardView.swift */; };
+		B433AD3A2647C4C900F93E20 /* DroughtsC2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B433AD392647C4C900F93E20 /* DroughtsC2.mp4 */; };
+		B433AD41264837FE00F93E20 /* FloodsC1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B433AD3E264837FE00F93E20 /* FloodsC1.mp4 */; };
+		B433AD42264837FE00F93E20 /* FloodsC3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B433AD3F264837FE00F93E20 /* FloodsC3.mp4 */; };
+		B433AD43264837FE00F93E20 /* FloodsC2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B433AD40264837FE00F93E20 /* FloodsC2.mp4 */; };
+		B44C2562263E7B3B00565EA7 /* TestQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44C2561263E7B3B00565EA7 /* TestQuizView.swift */; };
+		B44C2566263E7EC600565EA7 /* TestProcessBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44C2565263E7EC600565EA7 /* TestProcessBarView.swift */; };
+		B44C2569263E823800565EA7 /* TestQuizDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44C2568263E823800565EA7 /* TestQuizDetailView.swift */; };
+		B46002B1262C190600B61947 /* ChapterQuizDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46002B0262C190600B61947 /* ChapterQuizDetailView.swift */; };
+		B46002B4262C2B0900B61947 /* TestCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46002B3262C2B0900B61947 /* TestCardView.swift */; };
+		B46002B7262C2BFF00B61947 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46002B6262C2BFF00B61947 /* Test.swift */; };
+		B46002BA262C2C0800B61947 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46002B9262C2C0800B61947 /* Hero.swift */; };
+		B46002BD262C2CE800B61947 /* HeroStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46002BC262C2CE800B61947 /* HeroStore.swift */; };
+		B46002C0262C2DD200B61947 /* TestStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46002BF262C2DD200B61947 /* TestStore.swift */; };
+		B46002C3262C3A3000B61947 /* DroughtsC1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B46002C2262C3A3000B61947 /* DroughtsC1.mp4 */; };
+		B46002CB2630305200B61947 /* AnswerQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46002CA2630305200B61947 /* AnswerQuizView.swift */; };
+		B46002CE2630306100B61947 /* AnswerQuizDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46002CD2630306100B61947 /* AnswerQuizDetailView.swift */; };
+		B46002D12630307000B61947 /* AnswerQuizFeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46002D02630307000B61947 /* AnswerQuizFeedbackView.swift */; };
+		B46002D626304F0100B61947 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46002D526304F0100B61947 /* StoryView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		21A6FF1A262E02B000556AAC /* OpenDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenDataModel.swift; sourceTree = "<group>"; };
+		B4062BE22627F63A00AB748A /* Weathero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weathero.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4062BE52627F63A00AB748A /* WeatheroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatheroApp.swift; sourceTree = "<group>"; };
+		B4062BE72627F63A00AB748A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B4062BE92627F63A00AB748A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B4062BEC2627F63A00AB748A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B4062BEE2627F63A00AB748A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4062BF82627F71400AB748A /* QuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
+		B4062C022627F87D00AB748A /* QuizData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizData.swift; sourceTree = "<group>"; };
+		B4062C052627F8EA00AB748A /* QuizDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizDatabase.swift; sourceTree = "<group>"; };
+		B4062C082627FD8400AB748A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B4062C0C2627FDC000AB748A /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		B4062C102627FDEB00AB748A /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		B4062C132627FE2600AB748A /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
+		B4062C1C2628732C00AB748A /* HomeHero.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = HomeHero.MP4; sourceTree = "<group>"; };
+		B4062C2526287A1700AB748A /* LoopVideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopVideoPlayerView.swift; sourceTree = "<group>"; };
+		B4062C2826287E9500AB748A /* LocalVideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalVideoPlayerView.swift; sourceTree = "<group>"; };
+		B4062C2F262B2C4000AB748A /* Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
+		B4062C33262B2E2500AB748A /* ChapterCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterCardView.swift; sourceTree = "<group>"; };
+		B4062C36262B2F4E00AB748A /* ClimateChangeC1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ClimateChangeC1.mp4; sourceTree = "<group>"; };
+		B4062C39262B32F500AB748A /* ChapterStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterStore.swift; sourceTree = "<group>"; };
+		B4062C3C262B37F900AB748A /* CircleProcessBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProcessBarView.swift; sourceTree = "<group>"; };
+		B4062C3F262B43F800AB748A /* ChapterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterDetailView.swift; sourceTree = "<group>"; };
+		B4062C42262BF32A00AB748A /* ClimateChangeC2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ClimateChangeC2.mp4; sourceTree = "<group>"; };
+		B4062C45262C0C4700AB748A /* ChapterQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterQuizView.swift; sourceTree = "<group>"; };
+		B4062C48262C0FC200AB748A /* ClimateChangeC3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ClimateChangeC3.mp4; sourceTree = "<group>"; };
+		B433ACBB2642F68C00F93E20 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
+		B433ACC02643982500F93E20 /* SummaryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryCardView.swift; sourceTree = "<group>"; };
+		B433AD2D26469EF100F93E20 /* HeroData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroData.swift; sourceTree = "<group>"; };
+		B433AD3026469F1C00F93E20 /* HeroDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDatabase.swift; sourceTree = "<group>"; };
+		B433AD342646A28E00F93E20 /* HeroCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCardView.swift; sourceTree = "<group>"; };
+		B433AD392647C4C900F93E20 /* DroughtsC2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = DroughtsC2.mp4; sourceTree = "<group>"; };
+		B433AD3E264837FE00F93E20 /* FloodsC1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FloodsC1.mp4; sourceTree = "<group>"; };
+		B433AD3F264837FE00F93E20 /* FloodsC3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FloodsC3.mp4; sourceTree = "<group>"; };
+		B433AD40264837FE00F93E20 /* FloodsC2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FloodsC2.mp4; sourceTree = "<group>"; };
+		B44C2561263E7B3B00565EA7 /* TestQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestQuizView.swift; sourceTree = "<group>"; };
+		B44C2565263E7EC600565EA7 /* TestProcessBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProcessBarView.swift; sourceTree = "<group>"; };
+		B44C2568263E823800565EA7 /* TestQuizDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestQuizDetailView.swift; sourceTree = "<group>"; };
+		B46002B0262C190600B61947 /* ChapterQuizDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterQuizDetailView.swift; sourceTree = "<group>"; };
+		B46002B3262C2B0900B61947 /* TestCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCardView.swift; sourceTree = "<group>"; };
+		B46002B6262C2BFF00B61947 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		B46002B9262C2C0800B61947 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		B46002BC262C2CE800B61947 /* HeroStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroStore.swift; sourceTree = "<group>"; };
+		B46002BF262C2DD200B61947 /* TestStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStore.swift; sourceTree = "<group>"; };
+		B46002C2262C3A3000B61947 /* DroughtsC1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = DroughtsC1.mp4; sourceTree = "<group>"; };
+		B46002CA2630305200B61947 /* AnswerQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerQuizView.swift; sourceTree = "<group>"; };
+		B46002CD2630306100B61947 /* AnswerQuizDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerQuizDetailView.swift; sourceTree = "<group>"; };
+		B46002D02630307000B61947 /* AnswerQuizFeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerQuizFeedbackView.swift; sourceTree = "<group>"; };
+		B46002D526304F0100B61947 /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B4062BDF2627F63A00AB748A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21B01B63264527E500F1CB16 /* SwiftUICharts in Frameworks */,
+				B4062C002627F81D00AB748A /* RealmSwift in Frameworks */,
+				B4062BFE2627F81D00AB748A /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B4062BD92627F63A00AB748A = {
+			isa = PBXGroup;
+			children = (
+				B4062BE42627F63A00AB748A /* Weathero */,
+				B4062BE32627F63A00AB748A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B4062BE32627F63A00AB748A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4062BE22627F63A00AB748A /* Weathero.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4062BE42627F63A00AB748A /* Weathero */ = {
+			isa = PBXGroup;
+			children = (
+				B4062BE52627F63A00AB748A /* WeatheroApp.swift */,
+				B4062BF52627F65A00AB748A /* Model */,
+				B4062BF62627F65F00AB748A /* View */,
+				B4062BF72627F66C00AB748A /* ViewModel */,
+				B4062BE92627F63A00AB748A /* Assets.xcassets */,
+				B4062C1D2628733900AB748A /* Files */,
+				B4062BEE2627F63A00AB748A /* Info.plist */,
+				B4062BEB2627F63A00AB748A /* Preview Content */,
+			);
+			path = Weathero;
+			sourceTree = "<group>";
+		};
+		B4062BEB2627F63A00AB748A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B4062BEC2627F63A00AB748A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B4062BF52627F65A00AB748A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B4062BF82627F71400AB748A /* QuizModel.swift */,
+				B4062C022627F87D00AB748A /* QuizData.swift */,
+				B433AD2D26469EF100F93E20 /* HeroData.swift */,
+				B4062C2F262B2C4000AB748A /* Chapter.swift */,
+				B4062C39262B32F500AB748A /* ChapterStore.swift */,
+				B46002B6262C2BFF00B61947 /* Test.swift */,
+				B46002BF262C2DD200B61947 /* TestStore.swift */,
+				B46002B9262C2C0800B61947 /* Hero.swift */,
+				B46002BC262C2CE800B61947 /* HeroStore.swift */,
+				21A6FF1A262E02B000556AAC /* OpenDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B4062BF62627F65F00AB748A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B4062BE72627F63A00AB748A /* ContentView.swift */,
+				B4062C2D262880EE00AB748A /* HomeViewGroup */,
+				B4062C172627FE4100AB748A /* QuizViewGroup */,
+				B46002D426304EEA00B61947 /* StoryViewGroup */,
+				B4062C182627FE4F00AB748A /* TestViewGroup */,
+				B433ACBE264396E800F93E20 /* SummaryViewGroup */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B4062BF72627F66C00AB748A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B4062C052627F8EA00AB748A /* QuizDatabase.swift */,
+				B433AD3026469F1C00F93E20 /* HeroDatabase.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B4062C172627FE4100AB748A /* QuizViewGroup */ = {
+			isa = PBXGroup;
+			children = (
+				B4062C0C2627FDC000AB748A /* QuizView.swift */,
+				B4062C3F262B43F800AB748A /* ChapterDetailView.swift */,
+				B46002CA2630305200B61947 /* AnswerQuizView.swift */,
+				B46002CD2630306100B61947 /* AnswerQuizDetailView.swift */,
+				B46002D02630307000B61947 /* AnswerQuizFeedbackView.swift */,
+				B4062C45262C0C4700AB748A /* ChapterQuizView.swift */,
+				B46002B0262C190600B61947 /* ChapterQuizDetailView.swift */,
+				B4062C33262B2E2500AB748A /* ChapterCardView.swift */,
+				B4062C3C262B37F900AB748A /* CircleProcessBarView.swift */,
+			);
+			path = QuizViewGroup;
+			sourceTree = "<group>";
+		};
+		B4062C182627FE4F00AB748A /* TestViewGroup */ = {
+			isa = PBXGroup;
+			children = (
+				B4062C102627FDEB00AB748A /* TestView.swift */,
+				B44C2561263E7B3B00565EA7 /* TestQuizView.swift */,
+				B44C2568263E823800565EA7 /* TestQuizDetailView.swift */,
+				B46002B3262C2B0900B61947 /* TestCardView.swift */,
+				B44C2565263E7EC600565EA7 /* TestProcessBarView.swift */,
+			);
+			path = TestViewGroup;
+			sourceTree = "<group>";
+		};
+		B4062C1D2628733900AB748A /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4062C1C2628732C00AB748A /* HomeHero.MP4 */,
+				B4062C36262B2F4E00AB748A /* ClimateChangeC1.mp4 */,
+				B4062C42262BF32A00AB748A /* ClimateChangeC2.mp4 */,
+				B4062C48262C0FC200AB748A /* ClimateChangeC3.mp4 */,
+				B46002C2262C3A3000B61947 /* DroughtsC1.mp4 */,
+				B433AD392647C4C900F93E20 /* DroughtsC2.mp4 */,
+				B433AD3E264837FE00F93E20 /* FloodsC1.mp4 */,
+				B433AD40264837FE00F93E20 /* FloodsC2.mp4 */,
+				B433AD3F264837FE00F93E20 /* FloodsC3.mp4 */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		B4062C2D262880EE00AB748A /* HomeViewGroup */ = {
+			isa = PBXGroup;
+			children = (
+				B4062C082627FD8400AB748A /* HomeView.swift */,
+				B4062C2526287A1700AB748A /* LoopVideoPlayerView.swift */,
+				B4062C2826287E9500AB748A /* LocalVideoPlayerView.swift */,
+			);
+			path = HomeViewGroup;
+			sourceTree = "<group>";
+		};
+		B433ACBE264396E800F93E20 /* SummaryViewGroup */ = {
+			isa = PBXGroup;
+			children = (
+				B4062C132627FE2600AB748A /* SummaryView.swift */,
+				B433AD342646A28E00F93E20 /* HeroCardView.swift */,
+				B433ACC02643982500F93E20 /* SummaryCardView.swift */,
+				B433ACBB2642F68C00F93E20 /* VisualEffectBlur.swift */,
+			);
+			path = SummaryViewGroup;
+			sourceTree = "<group>";
+		};
+		B46002D426304EEA00B61947 /* StoryViewGroup */ = {
+			isa = PBXGroup;
+			children = (
+				B46002D526304F0100B61947 /* StoryView.swift */,
+			);
+			path = StoryViewGroup;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B4062BE12627F63A00AB748A /* Weathero */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4062BF12627F63A00AB748A /* Build configuration list for PBXNativeTarget "Weathero" */;
+			buildPhases = (
+				B4062BDE2627F63A00AB748A /* Sources */,
+				B4062BDF2627F63A00AB748A /* Frameworks */,
+				B4062BE02627F63A00AB748A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Weathero;
+			packageProductDependencies = (
+				B4062BFD2627F81D00AB748A /* Realm */,
+				B4062BFF2627F81D00AB748A /* RealmSwift */,
+				21B01B62264527E500F1CB16 /* SwiftUICharts */,
+			);
+			productName = Weathero;
+			productReference = B4062BE22627F63A00AB748A /* Weathero.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B4062BDA2627F63A00AB748A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					B4062BE12627F63A00AB748A = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = B4062BDD2627F63A00AB748A /* Build configuration list for PBXProject "Weathero" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B4062BD92627F63A00AB748A;
+			packageReferences = (
+				B4062BFC2627F81D00AB748A /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				21B01B61264527E500F1CB16 /* XCRemoteSwiftPackageReference "SwiftUICharts" */,
+			);
+			productRefGroup = B4062BE32627F63A00AB748A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B4062BE12627F63A00AB748A /* Weathero */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4062BE02627F63A00AB748A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4062C222628740B00AB748A /* HomeHero.MP4 in Resources */,
+				B4062C43262BF32A00AB748A /* ClimateChangeC2.mp4 in Resources */,
+				B433AD42264837FE00F93E20 /* FloodsC3.mp4 in Resources */,
+				B433AD3A2647C4C900F93E20 /* DroughtsC2.mp4 in Resources */,
+				B4062BED2627F63A00AB748A /* Preview Assets.xcassets in Resources */,
+				B46002C3262C3A3000B61947 /* DroughtsC1.mp4 in Resources */,
+				B433AD41264837FE00F93E20 /* FloodsC1.mp4 in Resources */,
+				B433AD43264837FE00F93E20 /* FloodsC2.mp4 in Resources */,
+				B4062BEA2627F63A00AB748A /* Assets.xcassets in Resources */,
+				B4062C37262B2F5400AB748A /* ClimateChangeC1.mp4 in Resources */,
+				B4062C49262C0FC200AB748A /* ClimateChangeC3.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B4062BDE2627F63A00AB748A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4062C062627F8EA00AB748A /* QuizDatabase.swift in Sources */,
+				B44C2562263E7B3B00565EA7 /* TestQuizView.swift in Sources */,
+				B4062C3A262B32F500AB748A /* ChapterStore.swift in Sources */,
+				B433AD3126469F1C00F93E20 /* HeroDatabase.swift in Sources */,
+				B46002B4262C2B0900B61947 /* TestCardView.swift in Sources */,
+				21A6FF1B262E02B000556AAC /* OpenDataModel.swift in Sources */,
+				B46002B1262C190600B61947 /* ChapterQuizDetailView.swift in Sources */,
+				B4062C032627F87D00AB748A /* QuizData.swift in Sources */,
+				B433AD2E26469EF100F93E20 /* HeroData.swift in Sources */,
+				B433ACBC2642F68C00F93E20 /* VisualEffectBlur.swift in Sources */,
+				B4062BE82627F63A00AB748A /* ContentView.swift in Sources */,
+				B4062C30262B2C4000AB748A /* Chapter.swift in Sources */,
+				B46002CB2630305200B61947 /* AnswerQuizView.swift in Sources */,
+				B433ACC12643982500F93E20 /* SummaryCardView.swift in Sources */,
+				B4062C092627FD8400AB748A /* HomeView.swift in Sources */,
+				B46002D626304F0100B61947 /* StoryView.swift in Sources */,
+				B4062C2626287A1700AB748A /* LoopVideoPlayerView.swift in Sources */,
+				B4062C40262B43F800AB748A /* ChapterDetailView.swift in Sources */,
+				B4062C112627FDEB00AB748A /* TestView.swift in Sources */,
+				B46002BA262C2C0800B61947 /* Hero.swift in Sources */,
+				B4062C0D2627FDC000AB748A /* QuizView.swift in Sources */,
+				B46002D12630307000B61947 /* AnswerQuizFeedbackView.swift in Sources */,
+				B4062C2926287E9500AB748A /* LocalVideoPlayerView.swift in Sources */,
+				B4062C3D262B37F900AB748A /* CircleProcessBarView.swift in Sources */,
+				B44C2566263E7EC600565EA7 /* TestProcessBarView.swift in Sources */,
+				B46002BD262C2CE800B61947 /* HeroStore.swift in Sources */,
+				B46002CE2630306100B61947 /* AnswerQuizDetailView.swift in Sources */,
+				B44C2569263E823800565EA7 /* TestQuizDetailView.swift in Sources */,
+				B4062C46262C0C4700AB748A /* ChapterQuizView.swift in Sources */,
+				B4062C34262B2E2500AB748A /* ChapterCardView.swift in Sources */,
+				B4062BE62627F63A00AB748A /* WeatheroApp.swift in Sources */,
+				B46002B7262C2BFF00B61947 /* Test.swift in Sources */,
+				B433AD352646A28E00F93E20 /* HeroCardView.swift in Sources */,
+				B46002C0262C2DD200B61947 /* TestStore.swift in Sources */,
+				B4062BF92627F71400AB748A /* QuizModel.swift in Sources */,
+				B4062C142627FE2600AB748A /* SummaryView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B4062BEF2627F63A00AB748A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B4062BF02627F63A00AB748A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B4062BF22627F63A00AB748A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 11;
+				DEVELOPMENT_ASSET_PATHS = "\"Weathero/Preview Content\"";
+				DEVELOPMENT_TEAM = EXH9NKGD4K;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Weathero/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.monash.Weathero;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B4062BF32627F63A00AB748A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 11;
+				DEVELOPMENT_ASSET_PATHS = "\"Weathero/Preview Content\"";
+				DEVELOPMENT_TEAM = EXH9NKGD4K;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Weathero/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.monash.Weathero;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B4062BDD2627F63A00AB748A /* Build configuration list for PBXProject "Weathero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4062BEF2627F63A00AB748A /* Debug */,
+				B4062BF02627F63A00AB748A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4062BF12627F63A00AB748A /* Build configuration list for PBXNativeTarget "Weathero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4062BF22627F63A00AB748A /* Debug */,
+				B4062BF32627F63A00AB748A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		21B01B61264527E500F1CB16 /* XCRemoteSwiftPackageReference "SwiftUICharts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/willdale/SwiftUICharts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.0;
+			};
+		};
+		B4062BFC2627F81D00AB748A /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.7.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		21B01B62264527E500F1CB16 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21B01B61264527E500F1CB16 /* XCRemoteSwiftPackageReference "SwiftUICharts" */;
+			productName = SwiftUICharts;
+		};
+		B4062BFD2627F81D00AB748A /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4062BFC2627F81D00AB748A /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		B4062BFF2627F81D00AB748A /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4062BFC2627F81D00AB748A /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B4062BDA2627F63A00AB748A /* Project object */;
+}
