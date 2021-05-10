@@ -43,6 +43,7 @@
 		B433AD41264837FE00F93E20 /* FloodsC1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B433AD3E264837FE00F93E20 /* FloodsC1.mp4 */; };
 		B433AD42264837FE00F93E20 /* FloodsC3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B433AD3F264837FE00F93E20 /* FloodsC3.mp4 */; };
 		B433AD43264837FE00F93E20 /* FloodsC2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B433AD40264837FE00F93E20 /* FloodsC2.mp4 */; };
+		B433AD482648D51300F93E20 /* DroughtsC1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B433AD472648D51300F93E20 /* DroughtsC1.mp4 */; };
 		B44C2562263E7B3B00565EA7 /* TestQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44C2561263E7B3B00565EA7 /* TestQuizView.swift */; };
 		B44C2566263E7EC600565EA7 /* TestProcessBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44C2565263E7EC600565EA7 /* TestProcessBarView.swift */; };
 		B44C2569263E823800565EA7 /* TestQuizDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44C2568263E823800565EA7 /* TestQuizDetailView.swift */; };
@@ -52,7 +53,6 @@
 		B46002BA262C2C0800B61947 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46002B9262C2C0800B61947 /* Hero.swift */; };
 		B46002BD262C2CE800B61947 /* HeroStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46002BC262C2CE800B61947 /* HeroStore.swift */; };
 		B46002C0262C2DD200B61947 /* TestStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46002BF262C2DD200B61947 /* TestStore.swift */; };
-		B46002C3262C3A3000B61947 /* DroughtsC1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B46002C2262C3A3000B61947 /* DroughtsC1.mp4 */; };
 		B46002CB2630305200B61947 /* AnswerQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46002CA2630305200B61947 /* AnswerQuizView.swift */; };
 		B46002CE2630306100B61947 /* AnswerQuizDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46002CD2630306100B61947 /* AnswerQuizDetailView.swift */; };
 		B46002D12630307000B61947 /* AnswerQuizFeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46002D02630307000B61947 /* AnswerQuizFeedbackView.swift */; };
@@ -95,6 +95,7 @@
 		B433AD3E264837FE00F93E20 /* FloodsC1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FloodsC1.mp4; sourceTree = "<group>"; };
 		B433AD3F264837FE00F93E20 /* FloodsC3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FloodsC3.mp4; sourceTree = "<group>"; };
 		B433AD40264837FE00F93E20 /* FloodsC2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FloodsC2.mp4; sourceTree = "<group>"; };
+		B433AD472648D51300F93E20 /* DroughtsC1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = DroughtsC1.mp4; sourceTree = "<group>"; };
 		B44C2561263E7B3B00565EA7 /* TestQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestQuizView.swift; sourceTree = "<group>"; };
 		B44C2565263E7EC600565EA7 /* TestProcessBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProcessBarView.swift; sourceTree = "<group>"; };
 		B44C2568263E823800565EA7 /* TestQuizDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestQuizDetailView.swift; sourceTree = "<group>"; };
@@ -104,7 +105,6 @@
 		B46002B9262C2C0800B61947 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		B46002BC262C2CE800B61947 /* HeroStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroStore.swift; sourceTree = "<group>"; };
 		B46002BF262C2DD200B61947 /* TestStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStore.swift; sourceTree = "<group>"; };
-		B46002C2262C3A3000B61947 /* DroughtsC1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = DroughtsC1.mp4; sourceTree = "<group>"; };
 		B46002CA2630305200B61947 /* AnswerQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerQuizView.swift; sourceTree = "<group>"; };
 		B46002CD2630306100B61947 /* AnswerQuizDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerQuizDetailView.swift; sourceTree = "<group>"; };
 		B46002D02630307000B61947 /* AnswerQuizFeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerQuizFeedbackView.swift; sourceTree = "<group>"; };
@@ -238,7 +238,7 @@
 				B4062C36262B2F4E00AB748A /* ClimateChangeC1.mp4 */,
 				B4062C42262BF32A00AB748A /* ClimateChangeC2.mp4 */,
 				B4062C48262C0FC200AB748A /* ClimateChangeC3.mp4 */,
-				B46002C2262C3A3000B61947 /* DroughtsC1.mp4 */,
+				B433AD472648D51300F93E20 /* DroughtsC1.mp4 */,
 				B433AD392647C4C900F93E20 /* DroughtsC2.mp4 */,
 				B433AD3E264837FE00F93E20 /* FloodsC1.mp4 */,
 				B433AD40264837FE00F93E20 /* FloodsC2.mp4 */,
@@ -342,12 +342,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B433AD482648D51300F93E20 /* DroughtsC1.mp4 in Resources */,
 				B4062C222628740B00AB748A /* HomeHero.MP4 in Resources */,
 				B4062C43262BF32A00AB748A /* ClimateChangeC2.mp4 in Resources */,
 				B433AD42264837FE00F93E20 /* FloodsC3.mp4 in Resources */,
 				B433AD3A2647C4C900F93E20 /* DroughtsC2.mp4 in Resources */,
 				B4062BED2627F63A00AB748A /* Preview Assets.xcassets in Resources */,
-				B46002C3262C3A3000B61947 /* DroughtsC1.mp4 in Resources */,
 				B433AD41264837FE00F93E20 /* FloodsC1.mp4 in Resources */,
 				B433AD43264837FE00F93E20 /* FloodsC2.mp4 in Resources */,
 				B4062BEA2627F63A00AB748A /* Assets.xcassets in Resources */,
