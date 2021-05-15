@@ -11,7 +11,7 @@ struct TestView: View {
     var body: some View {
         NavigationView {
             List {
-                Section(header: Text("Finish the test to collect new hero").font(.title2).foregroundColor(.primary).textCase(.none)) {}
+                Section(header: Text("Finish the test to collect new hero, and check collected heroes on the Collection page.").font(.title2).foregroundColor(.primary).textCase(.none)) {}
                 Section(header: Text("Weathero Kat").font(.title2).textCase(.none)) {
                     ZStack {
                         TestCardView(test: tests[0])
@@ -24,7 +24,7 @@ struct TestView: View {
                         NavigationLink( destination: TestQuizView(test: tests[1])){}.opacity(0)
                     }
                 }
-                Section(header: Text("Weathero Thro").font(.title2).textCase(.none)) {
+                Section(header: Text("Weathero Thor").font(.title2).textCase(.none)) {
                     ZStack {
                         TestCardView(test: tests[2])
                         NavigationLink( destination: TestQuizView(test: tests[2])){}.opacity(0)

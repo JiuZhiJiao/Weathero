@@ -15,6 +15,11 @@ struct QuizView: View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(alignment: .leading, spacing: 0) {
+                    Text("Go through each chapter and gain new knowledge, and test yourself to collect heroes on the Challenge page.")
+                        .font(.title2)
+                        .foregroundColor(.primary)
+                        .padding(.horizontal)
+                        .padding(.bottom)
                     // Climate Change
                     VStack(alignment: .leading, spacing: 0) {
                         Text("Climate Change")

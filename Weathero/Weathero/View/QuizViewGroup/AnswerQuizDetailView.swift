@@ -16,7 +16,7 @@ struct AnswerQuizDetailView: View {
     @StateObject private var quizDB = QuizDatabase(realm: try! Realm())
     
     var body: some View {
-        ScrollView(.vertical, showsIndicators: false) {
+        ScrollView(.vertical) {
             VStack(spacing: 22) {
                 VStack(alignment: .leading) {
                     Text(quizDB.getQuiz(topic: chapter.topic)[qid].content)

@@ -114,7 +114,7 @@ struct StoryView: View {
 //            }
             
             List {
-                Section(header: Text("Let us see what the data about climate change says").font(.custom("SF Compact Rounded", size: 25)).fontWeight(.semibold).foregroundColor(.primary).textCase(.none)) {}
+                Section(header: Text("Let's see what the data about climate change says").font(.title2).foregroundColor(.primary).textCase(.none)) {}
                 
                 Section(header: Text("Emission of CO2 Over Year (2013-2019)").font(.title2).textCase(.none)) {
                     VStack(alignment:.leading) {

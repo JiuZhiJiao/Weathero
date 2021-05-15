@@ -17,7 +17,7 @@ struct TestQuizDetailView: View {
     @Binding var flag: Bool
     
     var body: some View {
-        ScrollView(.vertical, showsIndicators: false) {
+        ScrollView(.vertical) {
             VStack(alignment: .leading) {
                 Text(quizDB.getQuiz(mainTopic: test.topic)[qid].content)
                     .font(.title2)
