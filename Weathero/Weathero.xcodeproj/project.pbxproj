@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21785D8726550DA40048C9C4 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21785D8626550DA40048C9C4 /* NetworkMonitor.swift */; };
 		21A6FF1B262E02B000556AAC /* OpenDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6FF1A262E02B000556AAC /* OpenDataModel.swift */; };
 		21B01B63264527E500F1CB16 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 21B01B62264527E500F1CB16 /* SwiftUICharts */; };
 		B4062BE62627F63A00AB748A /* WeatheroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4062BE52627F63A00AB748A /* WeatheroApp.swift */; };
@@ -60,6 +61,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21785D8626550DA40048C9C4 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		21A6FF1A262E02B000556AAC /* OpenDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenDataModel.swift; sourceTree = "<group>"; };
 		B4062BE22627F63A00AB748A /* Weathero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weathero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4062BE52627F63A00AB748A /* WeatheroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatheroApp.swift; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				B46002D526304F0100B61947 /* StoryView.swift */,
+				21785D8626550DA40048C9C4 /* NetworkMonitor.swift */,
 			);
 			path = StoryViewGroup;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4062C062627F8EA00AB748A /* QuizDatabase.swift in Sources */,
+				21785D8726550DA40048C9C4 /* NetworkMonitor.swift in Sources */,
 				B44C2562263E7B3B00565EA7 /* TestQuizView.swift in Sources */,
 				B4062C3A262B32F500AB748A /* ChapterStore.swift in Sources */,
 				B433AD3126469F1C00F93E20 /* HeroDatabase.swift in Sources */,
