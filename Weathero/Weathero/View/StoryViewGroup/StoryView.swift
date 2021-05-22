@@ -168,13 +168,14 @@ struct StoryView: View {
     
     func getOpenData() {
         
-        //API
+        //API END POINT
         let urlComp = NSURLComponents(string: "https://7gdpsmuu74.execute-api.ap-southeast-2.amazonaws.com/iteration2/opendata")!
         
         //Include api key in the header
         let params = [
             "Content-Type": "application/json",
             "Accept": "application/json",
+            //API KEY
             "x-api-key": "bFZsTHexQ59k2WsFWODRF7QuI0d23p4m7HRCc925"
         ]
         
